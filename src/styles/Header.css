@@ -1,0 +1,48 @@
+/* .header {
+    width: 100%;
+    height: 132px;
+    border: 1px solid green;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .logo{
+    margin-left: 30px;
+}
+
+.header .login_register{
+    margin-right: 30px;
+} */
+
+
+.header {
+    width: 100%;
+    height: 132px;
+    border: 1px solid green;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .logo{
+    margin-left: 30px;
+}
+
+.header .login_register{
+    margin-right: 30px;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        height: auto;
+        align-items: stretch;
+    }
+    
+    .header .logo, .header .login_register {
+        margin: 15px 0;
+    }
+}
