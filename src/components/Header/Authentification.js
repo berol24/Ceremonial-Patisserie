@@ -4,12 +4,12 @@ function Authentification() {
   return (
     <div className="authentification">
       <div className="login">
-        <a href="#">
+        <a href="/login">
           <button>Connexion</button>
         </a>
       </div>
       <div className="register">
-        <a href="#">
+        <a href="/register">
           <button>S'inscrire</button>
         </a>
       </div>
