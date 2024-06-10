@@ -1,17 +1,18 @@
 import React from "react";
 import "../../styles/Authentification.css"
+import { Link } from 'react-router-dom';
 function Authentification() {
   return (
     <div className="authentification">
       <div className="login">
-        <a href="/login">
+        <Link  to="/login">
           <button>Connexion</button>
-        </a>
+        </Link>
       </div>
       <div className="register">
-        <a href="/register">
+        <Link to="/register">
           <button>S'inscrire</button>
-        </a>
+        </Link>
       </div>
     </div>
   );
