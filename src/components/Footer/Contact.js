@@ -22,7 +22,7 @@ function Contact() {
       <div className="icon_reseau">
         <div>
           <a href="/whatsapp">
-            <img src={icon_whatsapp} />
+            <img src={icon_whatsapp} alt='logo_whatsapp'/>
           </a>
         </div>
         <div>
