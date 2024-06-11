@@ -21,7 +21,7 @@ function Contact() {
       </div>
       <div className="icon_reseau">
         <div>
-          <a href="#">
+          <a href="/whatsapp">
             <img src={icon_whatsapp} />
           </a>
         </div>
