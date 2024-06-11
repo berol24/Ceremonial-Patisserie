@@ -1,5 +1,5 @@
 import React from 'react'
-import "../../styles/Navlinks.css"
+import "../../styles/Header_css/Navlinks.css"
 
 function Navlinks() {
   return (

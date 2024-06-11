@@ -1,0 +1,16 @@
+.logo_footer,.mail ,.number{
+  margin-bottom: 20px;
+}
+
+.mail ,.number{
+    font-size: 22px;
+}
+.icon_reseau{
+    width: 250px;
+    border: 1px solid green;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto 120px;
+}
+
+
