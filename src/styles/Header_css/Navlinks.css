@@ -36,7 +36,9 @@
     margin: 0 20px;
 }
 
-
+.navlinks .nav-items .nav-item a{
+text-decoration: none;
+}
 
 @media only screen and (max-width: 768px) {
   

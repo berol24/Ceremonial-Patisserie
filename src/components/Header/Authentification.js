@@ -4,14 +4,15 @@ import { Link } from 'react-router-dom';
 function Authentification() {
   return (
     <div className="authentification">
-      <div className="login">
-        <Link  to="/login">
-          <button>Connexion</button>
+      <div className="login_connexion">
+       
+        <Link to="/login">
+          <button className="btn_login">Connexion</button>
         </Link>
       </div>
-      <div className="register">
+      <div className="register_connexion">
         <Link to="/register">
-          <button>S'inscrire</button>
+          <button className="btn_register">S'inscrire</button>
         </Link>
       </div>
     </div>

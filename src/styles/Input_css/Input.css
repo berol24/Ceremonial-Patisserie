@@ -1,0 +1,21 @@
+.input-items{
+    border: 1px solid red;
+    width: 200px;
+    margin: auto
+}
+
+.input-item{
+    width: 200px;
+    height: 30px;
+    background-color: #F4F4F4;
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+
+}
+
+label{
+    font-size: 15px;
+    color: #7F7E83;
+    float: left;
+}

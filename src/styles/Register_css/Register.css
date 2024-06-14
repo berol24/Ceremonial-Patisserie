@@ -1,0 +1,79 @@
+.register {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid green;
+    height: 100vh;
+  }
+  
+  .register_slogan {
+    width: 40%;
+    height: 80%;
+    border-radius: 8px;
+    border: 1px solid #d93232;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 80px;
+  }
+  
+  .form_register {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  form {
+    width: 80%;
+    display: grid;
+    gap: 20px; 
+  }
+  
+  .input_pair {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; 
+  }
+  
+
+  
+  .title_register{
+    margin: 0;
+    color: #D93232;
+  
+  }
+
+  .register_question a{
+    color: #D93232;
+  }
+
+
+  @media  screen and (max-width: 965px) {
+
+    .input_pair{
+        display: block;
+    }
+  }
+
+  @media  screen and (max-width: 570px) {
+
+    .register{
+        display: flex; 
+        flex-direction: column;
+        
+    }
+    .input_pair{
+      margin: auto;   
+    }
+    .form_register {
+       
+        margin-top: 100px;
+      }
+      .title_register{
+        width: 227px;
+      
+      }
+      
+  }
