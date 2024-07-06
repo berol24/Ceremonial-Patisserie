@@ -1,15 +1,23 @@
 .slogan_contain{
       height: 80vh; 
-       /* border: 1px solid green;  */
+      /* border: 1px solid green;  */
       display: flex;
       justify-content: center;
       align-items: center;
+      padding: 0;
+      
 }
 
+.slogan{
+  margin: 0;
+  text-align: center;
+}
 
 .slogan_logo{
   width: 360px;
   height: 285px;
+  /* border: 2px solid red; */
+  margin: auto;
 }
 .slogan_logo img{
   width: 100%;
@@ -24,4 +32,6 @@
 .slogan_text p{
   color: #D93232;
   font-weight: bolder;
+  width: 470px;
+  margin: auto;
 }

@@ -1,4 +1,4 @@
-.register {
+.login {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -6,7 +6,7 @@
     height: 100vh;
   }
   
-  .register_slogan {
+  .login_slogan {
     width: 40%;
     height: 80%;
     border-radius: 8px;
@@ -17,7 +17,7 @@
     margin-left: 80px;
   }
   
-  .form_register {
+  .form_login{
     width: 40%;
     height: 80vh;
     display: flex;
@@ -45,16 +45,20 @@
     gap: 20px; 
   }
   
+  .input_pair_login{
+    display: flex;
+    flex-direction: column;
+  }
 
   
-  .title_register{
+  .title_login{
     margin: 0;
     color: #D93232;
     text-align: center;
   
   }
 
-  .subtitle_register{
+  .subtitle_login{
     margin: 0;
    
     text-align: center;
@@ -62,13 +66,13 @@
   }
 
   
-  .register_question{
+  .login_question{
     text-align: center;
     
   }
 
 
-  .register_question a{
+  .login_question a{
     color: #D93232;
     
   }
@@ -82,7 +86,7 @@
     opacity: 0;
   }
 
-  .btn_register {
+  .btn_login{
     width: 150px;
     height: 30px;
     margin: 20px auto;
@@ -104,7 +108,7 @@
 
   @media  screen and (max-width: 570px) {
 
-    .register{
+    .login{
         display: flex; 
         flex-direction: column;
         margin: auto;
@@ -112,11 +116,11 @@
     .input_pair{
       margin: auto;   
     }
-    .form_register {
+    .form_login {
        
         margin-top: 100px;
       }
-      .title_register{
+      .title_login{
         width: 227px;
       
       }

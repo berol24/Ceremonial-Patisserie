@@ -1,11 +1,42 @@
-.input-items{
+.input-items-register{
     border: 1px solid red;
     width: 200px;
-    margin: auto
+    margin: auto;
+    position: relative;
+
+    
+}
+.input-items-register svg{
+    position: absolute;
+    top: 36px;
+    left: 12px;  
+}
+.input-item-register{
+    width: 200px;
+    height: 30px;
+    background-color: #F4F4F4;
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+
 }
 
-.input-item{
-    width: 200px;
+
+.input-items-login{
+    border: 1px solid red;
+    width: 309px;
+    margin: auto;
+    position: relative;
+
+    
+}
+.input-items-login svg{
+    position: absolute;
+    top: 36px;
+    left: 12px;  
+}
+.input-item-login{
+    width: 309px;
     height: 30px;
     background-color: #F4F4F4;
     border-radius: 10px;
