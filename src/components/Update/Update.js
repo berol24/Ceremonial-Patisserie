@@ -3,7 +3,7 @@ import Input from "../Input/Input";
 import Button from "../Button/Button";
 import "../../styles/Update_css/Update.css";
 import Slogan from "../Slogan";
-import { Link } from "react-router-dom";
+
 
 function Update() {
   return (
