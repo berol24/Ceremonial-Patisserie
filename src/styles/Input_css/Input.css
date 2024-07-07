@@ -50,3 +50,28 @@ label{
     color: #7F7E83;
     float: left;
 }
+
+
+
+.input-items-update{
+    border: 1px solid red;
+    width: 200px;
+    margin: auto;
+    position: relative;
+
+    
+}
+.input-items-update svg{
+    position: absolute;
+    top: 36px;
+    left: 12px;  
+}
+.input-item-update{
+    width: 200px;
+    height: 30px;
+    background-color: #F4F4F4;
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+
+}

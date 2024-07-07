@@ -1,0 +1,111 @@
+ .update {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid green;
+    height: 100vh;
+  }
+  
+  .update_slogan {
+    width: 40%;
+    height: 80%;
+    border-radius: 8px;
+    border: 1px solid #d93232;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 80px;
+  }
+ 
+  .form_update {
+    width: 40%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    border-radius: 8px;
+    margin-right: 80px;
+
+    box-shadow: 0 2px 18px 0 rgba(0, 0, 0, 0.1);
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+  
+  form {
+    width: 80%;
+    display: grid;
+    gap: 20px; 
+  }
+   
+  .input_pair_update {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; 
+  }
+  
+
+  
+  .title_update{
+    margin: 0;
+    color: #D93232;
+    text-align: center;
+  
+  }
+
+  .subtitle_update{
+    margin: 0;
+   
+    text-align: center;
+  
+  }
+
+  
+  .show_icon{
+    opacity: 1;
+  }
+
+  .hidden_icon{
+    opacity: 0;
+  }
+
+  .btn_update {
+    width: 150px;
+    height: 30px;
+    margin: 20px auto;
+    background-color: #D93232;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+
+  @media  screen and (max-width: 965px) {
+
+    .input_pair_update{
+        display: block;
+    }
+  }
+
+  @media  screen and (max-width: 570px) {
+
+    .update{
+        display: flex; 
+        flex-direction: column;
+        margin: auto;
+    }
+    .input_pair_update{
+      margin: auto;   
+    }
+    .form_update {
+       
+        margin-top: 100px;
+      }
+      .title_update{
+        width: 227px;
+      
+      }
+  } 

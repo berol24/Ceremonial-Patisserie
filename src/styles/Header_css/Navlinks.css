@@ -31,13 +31,13 @@
 
 .navlinks .nav-items .nav-item{
     list-style: none;
-    color: #FFBC10;
     font-size: 20px;
     margin: 0 20px;
 }
 
 .navlinks .nav-items .nav-item a{
 text-decoration: none;
+color: #FFBC10;
 }
 
 @media only screen and (max-width: 768px) {

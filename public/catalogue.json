@@ -1,0 +1,21 @@
+[
+    {
+      "id": 1,
+      "title": "delectus aut autem",
+      "description": "delectus aut aut",
+      "price": 2500
+    },
+    {
+      "id": 2,
+      "title": "quis ut nam facilis et officia qui",
+       "description": "delectus aut aut",
+       "price": 5000
+    },
+    {
+      "id": 3,
+      "title": "fugiat veniam minus",
+      "description": "delectus aut aut",
+      "price": 4500
+    }
+
+  ]
