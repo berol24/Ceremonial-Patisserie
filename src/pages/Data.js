@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import "../styles/Data.css";
+import { Link } from "react-router-dom";
 
 function Data() {
   const [data, setData] = useState(null);
@@ -16,20 +18,26 @@ function Data() {
   }, []);
 
   return (
-    <div>
+    <div className="catalogue_accueil">
       {data &&
-        data.map((item) => {
+        data.slice(0, 6).map((item) => {
           return (
-            <div key={item.id}>
-              <h2>{item.id}</h2>
-              <h2>{item.title}</h2>
-              <h2>{item.description}</h2>
-              <p>{item.price}</p>
-              {/* <img src={item.image} alt={item.name} /> */}
+            <div className="cake_detail" key={item.id}>
+              <div className="image_item">
+                <img
+                  src={`/assets/images/${item.url_image}.png`}
+                  alt={item.name}
+                />
+              </div>
+              <h2 className="cake_name">{item.name}</h2>
+              <p className="cake_price">{item.price} fcfa</p>
             </div>
           );
         })}
-        
+
+        <div className="mes_catalogues">
+            <Link to="/">Nos Catalogues</Link>
+        </div>
     </div>
   );
 }

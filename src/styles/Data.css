@@ -1,0 +1,74 @@
+.catalogue_accueil{
+    border: 2px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    justify-content: center;
+}
+
+.cake_detail{
+    border: 2px solid #FFBC10;
+    width: 340px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 70px;
+
+}
+
+
+.cake_detail .cake_price{
+width: 200px;
+height: 72px;
+color: #fff;
+background-color: #D93232;
+border-radius: 48px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 30px;
+font-weight:weight;
+text-align: center;
+}
+
+.image_item{
+    width: 200px;
+    height: 200px;
+    margin-top: 10px;
+  
+}
+
+.image_item img{
+    width: 100%;
+    height: 100%;
+  
+}
+
+.mes_catalogues{
+   background:  #FFBC10;
+   width: 460px;
+   height: 78px;
+   display:'flex';
+   justify-content: center;
+   align-items:'center';
+   text-align: center;
+}
+
+.mes_catalogues{
+    background:  #FFBC10;
+    display:flex;
+    justify-content:center;
+    width: 460px;
+    height: 90px;
+    border: 2px solid red;
+    margin: 90px;
+   
+ }
+
+ .mes_catalogues a{
+    border: 2px solid blue;
+      font-size: 28px; 
+
+ }

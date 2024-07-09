@@ -22,7 +22,7 @@ function Home() {
               saveurs.
             </p>
             <div className="button_start">
-             <Link><button>  Commencer</button></Link> 
+             <Link to="/" ><button>Commencer</button></Link> 
             </div>
           </div>
         </div>
