@@ -3,7 +3,7 @@ import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
 import  { useEffect, useState } from "react";
 import "../../styles/Data.css";
-import { Link } from 'react-router-dom';
+
 function Catalogues() {
 
   const [data, setData] = useState(null);
