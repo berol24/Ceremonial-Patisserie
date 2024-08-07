@@ -1,0 +1,11 @@
+
+.mySloganText {
+   margin: 50px 0;
+   text-align: center;
+}
+
+.mySloganText p{
+    color:#D93232 ;
+    font-weight: bolder;
+
+}

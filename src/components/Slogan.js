@@ -1,6 +1,7 @@
 import React from "react";
 import logo_ceremonial from "../assets/images/logo_ceremonial.svg";
 import "../styles/Slogan.css";
+import Slogan_text from "./Slogan_text";
 function Slogan() {
   return (
     <div className="slogan_contain">

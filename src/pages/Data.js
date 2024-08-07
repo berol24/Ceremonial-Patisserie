@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "../styles/Data.css";
 import { Link } from "react-router-dom";
+import Slogan from "../components/Slogan";
+import Slogan_text from "../components/Slogan_text";
 
 function Data() {
   const [data, setData] = useState(null);
@@ -9,7 +11,7 @@ function Data() {
     fetch("/catalogue.json")
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
+        // console.log(data);
         setData(data);
       })
       .catch((error) => {
@@ -18,27 +20,33 @@ function Data() {
   }, []);
 
   return (
-    <div className="catalogue_accueil">
-      {data &&
-        data.slice(0, 6).map((item) => {
-          return (
-            <div className="cake_detail" key={item.id}>
-              <div className="image_item">
-                <img
-                  src={`/assets/images/${item.url_image}.png`}
-                  alt={item.name}
-                />
-              </div>
-              <h2 className="cake_name">{item.name}</h2>
-              <p className="cake_price">{item.price} fcfa</p>
-            </div>
-          );
-        })}
+    <>
+      <div className="catalogue_accueil">
+        {data &&
+          data.slice(0, 6).map((item) => {
+            return (
+              <Link to={`/cake/${item.id}`} key={item.id}>
+                {" "}
+                <div className="cake_detail">
+                  <div className="image_item">
+                    <img
+                      src={`/assets/images/${item.url_image}.png`}
+                      alt={item.name}
+                    />
+                  </div>
+                  <h2 className="cake_name">{item.name}</h2>
+                  <p className="cake_price">{item.price} fcfa</p>
+                </div>{" "}
+              </Link>
+            );
+          })}
 
         <div className="mes_catalogues">
-            <Link to="/catalogues">Nos Catalogues</Link>
+          <Link to="/catalogues">Nos Catalogues</Link>
         </div>
-    </div>
+      </div>{" "}
+      <Slogan_text />
+    </>
   );
 }
 

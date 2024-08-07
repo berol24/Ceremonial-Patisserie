@@ -12,6 +12,7 @@ import Realisations from "../components/Realisations/Realisations";
 import Apropos from "../components/Apropos/Apropos";
 import Contact from "../components/Contact/Contact";
 import Favoris from "../components/Favoris/Favoris";
+import CakeDetail from "../components/CakeDetail/CakeDetail";
 
 const MyRoutes = () => (
   <Router>
@@ -27,6 +28,7 @@ const MyRoutes = () => (
         <Route path="favoris" element={<Favoris />} />
         <Route path="register" element={<Register />} />
         <Route path="login" element={<Login />} />
+        <Route path="/cake/:id" element={<CakeDetail />} />
     </Routes>
     
   </Router>
