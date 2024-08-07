@@ -11,6 +11,7 @@ function Navlinks() {
       <li className='nav-item'><Link to='/realisations'> Nos réalisations</Link></li>
       <li className='nav-item'><Link to='/apropos' > A propos</Link></li>
       <li className='nav-item'><Link to='/contact'> Contact</Link></li>
+      <li className='nav-item'><Link to='/favoris'> Favoris</Link></li>
      </ul>
     </div>
   )

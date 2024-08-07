@@ -1,4 +1,5 @@
-.accueil{
+/* Styles par défaut */
+.accueil {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -10,56 +11,146 @@
     opacity: 0.9;
 }
 
-
-
-.bloc_left{
+.bloc_left {
     border: 1px solid green;
     margin-left: 130px;
 }
+
 .message_accueil.item1 {
     height: 150px;
-    width: 572px;
-   }
-.message_accueil.item1 p{
-    font-family: Lobster;
-    font-size: 57px;
+    width: 642px;
+}
+
+.message_accueil.item1 p {
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
 }
 
 .message_accueil.item2 {
     height: 700px;
     width: 570px;
     margin-top: 78px;
-  }
-.message_accueil.item2 p{
+}
+
+.message_accueil.item2 p {
     font-family: 'Courier New', Courier, monospace;
     font-size: 38px;
 }
 
-.accueil .button_start{
+.accueil .button_start {
     width: 260px;
-   height: 86px; 
-   border: 1px solid purple; 
-}
-.accueil .button_start button {
-   color: #FFFFFF; 
-   background-color: hsl(0, 69%, 52%);
-   width: 100%;
-   height: 100%;
-   border-radius: 48px;
-   font-weight: bold;
-   font-size: 35px;
-   cursor: pointer;
-   border: none;
+    height: 86px;
+    border: 1px solid purple;
 }
 
-.bloc_right{
-    height: 703px;
+.accueil .button_start button {
+    color: #FFFFFF;
+    background-color: hsl(0, 69%, 52%);
+    width: 100%;
+    height: 100%;
+    border-radius: 48px;
+    font-weight: bold;
+    font-size: 35px;
+    cursor: pointer;
+    border: none;
+}
+
+.bloc_right {
+    height: 720px;
     width: 514px;
     border: 1px solid purple;
     margin-right: 130px;
 }
 
-.bloc_right .image_pdg{
+.bloc_right .image_pdg {
     width: 100%;
     height: 100%;
+}
+
+/* Styles responsives pour un écran de moins de 1000px */
+@media (max-width: 1000px) {
+    .bloc_left {
+        width: 50%;
+        margin: 10px 10px 10px 25px;
+        padding: 50px;
+    }
+
+    .message_accueil.item1 p,
+    .message_accueil.item2 p {
+        font-size: 4vw; /* Ajuster la taille de la police pour qu'elle soit responsive */
+    }
+
+    .bloc_right {
+        width: 80%;
+        height: 100%;
+        margin: 0 10px;
+    }
+
+    .bloc_right .image_pdg {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/* Styles pour un écran de 768px et moins */
+@media (max-width: 768px) {
+    .accueil {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .bloc_left,
+    .bloc_right {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    .bloc_left {
+        border: none;
+        margin-left: 0;
+    }
+
+    .message_accueil.item1,
+    .message_accueil.item2 {
+        width: 100%;
+        height: auto;
+    }
+
+    .message_accueil.item1 p {
+        font-family: 'Lobster', cursive;
+        font-size: 30px;
+        text-align: center;
+        font-weight: bolder;
+    }
+
+    .message_accueil.item2 p {
+        font-size: 3vw;
+        width: 77%;
+        text-align: center;
+        margin: -46px auto 0;
+    }
+
+    .accueil .button_start {
+        width: 170px;
+        height: 50px;
+        margin: 20px auto;
+    }
+
+    .accueil .button_start button {
+        font-size: 4vw; /* Ajuster la taille de la police pour qu'elle soit responsive */
+        border-radius: 24px;
+    }
+
+    .bloc_right {
+        margin: -35px auto -21px;
+        border: 1px solid red;
+        height: 548px;
+    }
+
+    .bloc_right .image_pdg {
+        width: 100%;
+        height: 100%;
+    }
 }

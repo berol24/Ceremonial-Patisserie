@@ -45,14 +45,42 @@
       "id": 7,
       "name": "fugiat veniam minus",
       "description": "delectus aut aut",
-      "price": 65500,
+      "price": 65540,
        "url_image": "cake_square"
     },
     {
       "id": 8,
       "name": "fugiat veniam minus",
       "description": "delectus aut aut",
-      "price": 65500,
+      "price": 68500,
+       "url_image": "cake_heart"
+    },
+    {
+      "id": 9,
+      "name": "fugiat veniam minus",
+      "description": "delectus aut aut",
+      "price": 65540,
+       "url_image": "cake_square"
+    },
+    {
+      "id": 10,
+      "name": "fugiat veniam minus",
+      "description": "delectus aut aut",
+      "price": 68500,
+       "url_image": "cake_heart"
+    },
+    {
+      "id": 11,
+      "name": "fugiat veniam minus",
+      "description": "delectus aut aut",
+      "price": 45540,
+       "url_image": "cake_square"
+    },
+    {
+      "id": 12,
+      "name": "fugiat veniam minus",
+      "description": "delectus aut aut",
+      "price": 61500,
        "url_image": "cake_heart"
     }
 

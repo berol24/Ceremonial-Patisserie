@@ -28,17 +28,17 @@ function Contact() {
           </a>
         </div>
         <div>
-          <Link href="https://www.facebook.com/profile.php?id=100076282001637">
+          <Link href="https://www.facebook.com/profile.php?id=100076282001637" target="_blank"  rel="noopener noreferrer">
             <img src={icon_facebook} alt="logo_facebook" />
           </Link>
         </div>
         <div>
-          <Link href="https://www.instagram.com/ceremonialpatisserie?igsh=MWltcG02dGwwZjd3OQ==">
+          <Link href="https://www.instagram.com/ceremonialpatisserie?igsh=MWltcG02dGwwZjd3OQ==" target="_blank">
             <img src={icon_instagram} alt="logo_instagram" />
           </Link>
         </div>
         <div>
-          <Link href="https://youtube.com/@ceremonialpatisserie?si=VzO2dmN460n-IIY-">
+          <Link href="https://www.youtube.com/@ceremonialpatisserie" target="_blank">
             <img src={icon_youtube} alt="logo_youtube" />
           </Link>
         </div>

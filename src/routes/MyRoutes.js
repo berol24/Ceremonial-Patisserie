@@ -11,7 +11,7 @@ import Catalogues from "../components/Catalogues/Catalogues";
 import Realisations from "../components/Realisations/Realisations";
 import Apropos from "../components/Apropos/Apropos";
 import Contact from "../components/Contact/Contact";
-
+import Favoris from "../components/Favoris/Favoris";
 
 const MyRoutes = () => (
   <Router>
@@ -24,9 +24,9 @@ const MyRoutes = () => (
         <Route path="realisations" element={<Realisations />} />
         <Route path="apropos" element={<Apropos />} />
         <Route path="contact" element={<Contact />} />
+        <Route path="favoris" element={<Favoris />} />
         <Route path="register" element={<Register />} />
         <Route path="login" element={<Login />} />
-     
     </Routes>
     
   </Router>

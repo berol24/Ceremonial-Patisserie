@@ -6,6 +6,8 @@ function Copyright() {
     <div className='copyright'>
        <p>
        Copyright © 2024 - Tous droits réservés Pep's Extra - <span> https://lien du site - https://forum-peps-extra.com</span>
+      
+     <span> horaires d'ouverture  / mentions legales</span>
        </p>
     </div>
   )

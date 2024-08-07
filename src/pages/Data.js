@@ -36,7 +36,7 @@ function Data() {
         })}
 
         <div className="mes_catalogues">
-            <Link to="/">Nos Catalogues</Link>
+            <Link to="/catalogues">Nos Catalogues</Link>
         </div>
     </div>
   );
