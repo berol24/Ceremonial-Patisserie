@@ -6,7 +6,7 @@ import icon_search from "../../assets/icons/icon_search.svg";
 import icon_filter from "../../assets/icons/icon_filter.svg";
 import "../../styles/Catalogues_css/Catalogues.css";
 import { Link } from "react-router-dom";
-import Slogan_text from "../Slogan_text";
+import SloganText from "../SloganText";
 
 function Catalogues() {
   const [data, setData] = useState(null);
@@ -88,8 +88,8 @@ function Catalogues() {
         ) : (
           <div>Pas de résultat</div>
         )}
-        <Slogan_text/>
-      </div>
+      
+      </div>  <SloganText/>
       <Footer />
     </div>
   );

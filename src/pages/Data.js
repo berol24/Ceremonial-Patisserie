@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../styles/Data.css";
 import { Link } from "react-router-dom";
-import Slogan_text from "../components/Slogan_text";
+import SloganText from "../components/SloganText";
 
 function Data() {
   const [data, setData] = useState(null);
@@ -43,8 +43,8 @@ function Data() {
         <div className="mes_catalogues">
           <Link to="/catalogues">Nos Catalogues</Link>
         </div>
-      </div>{" "}
-      <Slogan_text />
+      </div>
+      <SloganText />
     </>
   );
 }

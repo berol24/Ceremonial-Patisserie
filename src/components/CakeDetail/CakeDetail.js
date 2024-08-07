@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
-import Slogan_text from "../Slogan_text";
+import SloganText from "../SloganText";
 
 function CakeDetail() {
   const { id } = useParams();
@@ -37,7 +37,7 @@ function CakeDetail() {
         <h2 className="cake_name">{cake.name}</h2>
         <p className="cake_price">{cake.price} fcfa</p>
       </div>
-      <Slogan_text/>
+      <SloganText/>
       <Footer />
     </div>
   );

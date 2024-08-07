@@ -1,6 +1,6 @@
 import React from "react";
-import "../styles/Slogan_text.css"; 
-function Slogan_text() {
+import "../styles/SloganText.css"; 
+function SloganText() {
   return (
     <div className="mySloganText">
       <p>“Ensemble nous donnons de la valeur à vos cérémonies”</p>
@@ -8,4 +8,4 @@ function Slogan_text() {
   );
 }
 
-export default Slogan_text;
+export default SloganText;
