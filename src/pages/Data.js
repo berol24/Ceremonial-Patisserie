@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../styles/Data.css";
 import { Link } from "react-router-dom";
-import Slogan from "../components/Slogan";
 import Slogan_text from "../components/Slogan_text";
 
 function Data() {
