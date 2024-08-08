@@ -13,6 +13,7 @@ import Apropos from "../components/Apropos/Apropos";
 import Contact from "../components/Contact/Contact";
 import Favoris from "../components/Favoris/Favoris";
 import CakeDetail from "../components/CakeDetail/CakeDetail";
+import VideoPresentation from "../components/VideoPresentation/VideoPresentation";
 
 const MyRoutes = () => (
   <Router>
@@ -29,6 +30,7 @@ const MyRoutes = () => (
         <Route path="register" element={<Register />} />
         <Route path="login" element={<Login />} />
         <Route path="/cake/:id" element={<CakeDetail />} />
+        <Route path="videopresentation" element={<VideoPresentation />} />
     </Routes>
     
   </Router>
