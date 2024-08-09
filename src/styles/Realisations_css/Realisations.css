@@ -1,0 +1,304 @@
+
+
+  /* Style par défaut */
+.title_realisation {
+    background-color: #D93232;
+    width: 759px;
+    height: 144px;
+    margin: 70px auto 50px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title_realisation h1 {
+    color: white;
+}
+
+.subtitle_realisation {
+    margin: auto;
+    width: 92%;
+    padding: 15px;
+}
+
+.subtitle_realisation p {
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 800;
+}
+
+.container {
+    border: 2px solid green;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+
+.container .image_left,
+.container .image_right {
+    border: 2px solid purple;
+    width: 30%;
+    height: auto;
+}
+
+.container .image_left .img_real,
+.container .image_right .img_real {
+    border: 1px solid blue;
+    width: 300px;
+    margin: 50px;
+}
+
+.container .image_left .img_real img,
+.container .image_right .img_real img {
+    border: 2px solid purple;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.container .text_center {
+    border: 2px solid blue;
+    width: 30%;
+    height: 100%;
+    line-height: 2;
+    font-style: italic;
+    font-size: 20px;
+}
+
+/* Style pour les écrans de 768px et moins */
+@media (max-width: 1200px) {
+    .title_realisation {
+        width: 90%;
+        height: auto;
+        margin: 50px auto 30px;
+        padding: 20px;
+    }
+
+    .subtitle_realisation p {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .container .image_left,
+    .container .image_right,
+    .container .text_center {
+        width: 100%;
+        margin: 20px 0;
+        padding: 0;
+    }
+
+    .container .image_left .img_real,
+    .container .image_right .img_real {
+        width: 85%;
+        margin: 20px auto;
+    }
+
+    .container .text_center {
+        line-height: 1.6;
+        font-size: 18px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .title_realisation {
+        
+        padding: 0px;
+    }
+    .subtitle_realisation p {
+            font-size: 15px;
+            text-align: center;
+        }
+    }
+
+
+
+
+
+
+
+    /* ///////////////////////////// mARIAGE*/
+
+
+    .title_mariage {
+        background-color: #D93232;
+        width: 352px;
+        height: 90px;
+        margin: 70px auto 50px;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 3px solid black;
+    }
+    
+    .title_mariage h1 {
+        color: white;
+    }
+
+    .subtitle_mariage {
+        margin: auto;
+        width: 92%;
+        padding: 15px;
+    }
+    
+    .subtitle_mariage p {
+        font-size: 30px;
+        font-style: italic;
+        font-weight: 800;
+    }
+    
+
+    @media (max-width: 1200px) {
+        .title_mariage {
+            width: 90%;
+            height: auto;
+            margin: 50px auto 30px;
+            padding: 20px;
+        }
+    
+        .subtitle_mariage p {
+            font-size: 24px;
+            text-align: center;
+        }
+    }
+
+
+    @media (max-width: 768px) {
+        .title_mariage {
+            
+            padding: 0px;
+        }
+        .subtitle_mariage p {
+                font-size: 15px;
+                text-align: center;
+            }
+        }
+    
+
+ /* ///////////////////////////// Anniversaire*/
+
+
+    .title_anniversaire {
+        background-color: #D93232;
+        width: 352px;
+        height: 90px;
+        margin: 70px auto 50px;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 3px solid black;
+    }
+    
+    .title_anniversaire h1 {
+        color: white;
+    }
+
+    .subtitle_anniversaire {
+        margin: auto;
+        width: 92%;
+        padding: 15px;
+    }
+    
+    .subtitle_anniversaire p {
+        font-size: 30px;
+        font-style: italic;
+        font-weight: 800;
+    }
+    
+
+    @media (max-width: 1200px) {
+        .title_anniversaire {
+            width: 90%;
+            height: auto;
+            margin: 50px auto 30px;
+            padding: 20px;
+        }
+    
+        .subtitle_anniversaire p {
+            font-size: 24px;
+            text-align: center;
+        }
+    }
+
+
+    @media (max-width: 768px) {
+        .title_anniversaire {
+            
+            padding: 0px;
+        }
+        .subtitle_anniversaire p {
+                font-size: 15px;
+                text-align: center;
+            }
+        }
+    
+
+
+        /* ///////////////////////////// Ceremonial en action */
+
+
+    .title_ceremonial_en_action {
+        background-color: #D93232;
+        width: 430px;
+        height: 90px;
+        margin: 70px auto 50px;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 3px solid black;
+    }
+    
+    .title_ceremonial_en_action h1 {
+        color: white;
+    }
+
+    .subtitle_ceremonial_en_action {
+        margin: auto;
+        width: 92%;
+        padding: 15px;
+    }
+    
+    .subtitle_ceremonial_en_action p {
+        font-size: 30px;
+        font-style: italic;
+        font-weight: 800;
+    }
+    
+
+    @media (max-width: 1200px) {
+        .title_ceremonial_en_action {
+            width: 90%;
+            height: auto;
+            margin: 50px auto 30px;
+            padding: 20px;
+        }
+    
+        .subtitle_ceremonial_en_action p {
+            font-size: 24px;
+            text-align: center;
+        }
+    }
+
+
+    @media (max-width: 768px) {
+        .title_ceremonial_en_action {
+            padding: 0px;
+            font-size: 85%;
+         
+        }
+        .subtitle_ceremonial_en_action p {
+                font-size: 15px;
+                text-align: center;
+            }
+        }
+    
