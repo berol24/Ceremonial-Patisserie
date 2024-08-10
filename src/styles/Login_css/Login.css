@@ -106,22 +106,33 @@
     }
   }
 
-  @media  screen and (max-width: 570px) {
+  @media  screen and (max-width: 850px) {
 
     .login{
-        display: flex; 
-        flex-direction: column;
-        margin: auto;
+    width: 100%;  
+    border: 1px solid green;
+    height: auto;
+    display: flex; 
+    align-items: center;
+    flex-direction: column;
+     margin: auto; 
     }
     .input_pair{
       margin: auto;   
     }
     .form_login {
-       
-        margin-top: 100px;
+      width: 90%;
+      height: 60vh;
+       border: 1px solid purple;
+        margin: 100px auto;
       }
       .title_login{
-        width: 227px;
-      
+        width: 100%;
+       text-align: center;
+      }
+
+      .login_slogan{
+        width: 90%;
+        margin: auto;
       }
   }

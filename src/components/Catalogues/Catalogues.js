@@ -7,7 +7,7 @@ import icon_filter from "../../assets/icons/icon_filter.svg";
 import "../../styles/Catalogues_css/Catalogues.css";
 import { Link } from "react-router-dom";
 import SloganText from "../SloganText";
-
+import heart_bold from "../../assets/images/heart-bold.svg";
 function Catalogues() {
   const [data, setData] = useState(null);
   const [name, setName] = useState("");
@@ -15,7 +15,6 @@ function Catalogues() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-   
 
     const isNumeric = (str) => {
       return /^\d+$/.test(str);
@@ -27,7 +26,7 @@ function Catalogues() {
       } else {
         return item.name.toLowerCase().includes(name.toLowerCase());
       }
-    })
+    });
 
     setFilteredData(filter);
     console.log(`The name you entered was: ${name}`);
@@ -38,7 +37,7 @@ function Catalogues() {
       .then((res) => res.json())
       .then((data) => {
         setData(data);
-        setFilteredData(data); 
+        setFilteredData(data);
       })
       .catch((error) => {
         console.error("Error fetching the JSON data:", error);
@@ -54,7 +53,6 @@ function Catalogues() {
           <img src={icon_filter} alt="icon_filter" />
         </button>
       </div>
-
       <div className="search">
         <form onSubmit={handleSubmit}>
           <input
@@ -68,28 +66,32 @@ function Catalogues() {
           </button>
         </form>
       </div>
-
       <div className="catalogue_accueil">
         {filteredData.length > 0 ? (
           filteredData.map((item) => (
-            <Link to={`/cake/${item.id}`} key={item.id}>
+            <div className="catalogue_item" key={item.id}>
               <div className="cake_detail">
-                <div className="image_item">
-                  <img
-                    src={`/assets/images/${item.url_image}.png`}
-                    alt={item.name}
-                  />
-                </div>
-                <h2 className="cake_name">{item.name}</h2>
-                <p className="cake_price">{item.price} fcfa</p>
+              <div className="icon_favori">
+                    <img src={heart_bold} alt="btn_favori" />
+                  </div>
+                <Link to={`/cake/${item.id}`} key={item.id}>
+                  <div className="image_item">
+                    <img
+                      src={`/assets/images/${item.url_image}.png`}
+                      alt={item.name}
+                    />
+                  </div>
+                  <h2 className="cake_name">{item.name}</h2>
+                  <p className="cake_price">{item.price} fcfa</p>
+                </Link>{" "}
               </div>
-            </Link>
+            </div>
           ))
         ) : (
           <div>Pas de résultat</div>
         )}
-      
-      </div>  <SloganText/>
+      </div>{" "}
+      <SloganText />
       <Footer />
     </div>
   );

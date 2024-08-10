@@ -1,4 +1,4 @@
-.catalogue_accueil{
+.catalogue_accueil {
     border: 2px solid red;
     display: flex;
     flex-wrap: wrap;
@@ -6,7 +6,7 @@
     justify-content: center;
 }
 
-.cake_detail{
+.cake_detail {
     border: 2px solid #FFBC10;
     width: 340px;
     height: 400px;
@@ -15,7 +15,7 @@
     align-items: center;
     flex-direction: column;
     margin: 70px;
-
+   position: relative;
 }
 
 
@@ -72,4 +72,12 @@ text-align: center;
     border: 2px solid blue;
       font-size: 28px; 
 
+ }
+
+
+ .icon_favori{
+    border: 1px solid black;
+    position: absolute;
+    top: 0;
+    left: 85%;
  }

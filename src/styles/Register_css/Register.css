@@ -105,19 +105,30 @@
   @media  screen and (max-width: 570px) {
 
     .register{
-        display: flex; 
-        flex-direction: column;
-        margin: auto;
+      width: 100%;  
+      border: 1px solid green;
+      height: auto;
+      display: flex; 
+      align-items: center;
+      flex-direction: column;
+       margin: auto; 
     }
     .input_pair{
       margin: auto;   
     }
     .form_register {
-       
-        margin-top: 100px;
+        width: 90%;
+        height: 100vh;
+         border: 1px solid purple;
+          margin: 100px auto;
+        
       }
-      .title_register{
-        width: 227px;
-      
+      .title_login{
+        width: 100%;
+       text-align: center;
+      }
+      .register_slogan{
+        width: 90%;
+        margin: auto;
       }
   }
