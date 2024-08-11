@@ -23,7 +23,7 @@ function Contact() {
       </div>
       <div className="icon_reseau">
         <div>
-          <a href="/whatsapp">
+          <a href="https://wa.me/+237655810768"  target="_blank"  rel="noopener noreferrer">
             <img src={icon_whatsapp} alt="logo_whatsapp" />
           </a>
         </div>
