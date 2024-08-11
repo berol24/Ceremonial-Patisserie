@@ -25,7 +25,7 @@
     align-items: center; 
     border-radius: 8px;
     margin-right: 80px;
-    /* border: 2px solid purple; */
+ 
     box-shadow: 0 2px 18px 0 rgba(0, 0, 0, 0.1);
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
@@ -115,7 +115,7 @@
     display: flex; 
     align-items: center;
     flex-direction: column;
-     margin: auto; 
+    margin: auto; 
     }
     .input_pair{
       margin: auto;   
@@ -136,3 +136,7 @@
         margin: auto;
       }
   }
+
+
+
+
