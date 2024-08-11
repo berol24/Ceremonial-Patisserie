@@ -3,8 +3,15 @@ import "../styles/Data.css";
 import { Link } from "react-router-dom";
 import SloganText from "../components/SloganText";
 import heart_bold from "../assets/images/heart-bold.svg";
+import heart_fill from "../assets/images/heart-fill.svg";
 function Data() {
   const [data, setData] = useState(null);
+
+  const [favorites, setFavorites] = useState(() => {
+    // Récupérer les favoris depuis le localStorage si disponible
+    const savedFavorites = localStorage.getItem("favorites");
+    return savedFavorites ? JSON.parse(savedFavorites) : [];
+  });
 
   useEffect(() => {
     fetch("/catalogue.json")
@@ -18,20 +25,36 @@ function Data() {
       });
   }, []);
 
+  const toggleFavorite = (item) => {
+    const isFavorite = favorites.some((fav) => fav.id === item.id);
+
+    const updatedFavorites = isFavorite
+      ? favorites.filter((fav) => fav.id !== item.id) // retirer des favoris
+      : [...favorites, item]; // ajouter aux favoris
+
+    setFavorites(updatedFavorites);
+    localStorage.setItem("favorites", JSON.stringify(updatedFavorites));
+  };
+
   return (
     <>
       <div className="catalogue_accueil">
         {data &&
           data.slice(0, 6).map((item) => {
+            const isFavorite = favorites.some((fav) => fav.id === item.id);
             return (
               <div className="catalogue_item" key={item.id}>
                 <div className="cake_detail">
-                 
-                  <div className="icon_favori">
-                    <img src={heart_bold} alt="btn_favori" />
+                  <div
+                    className="icon_favori"
+                    onClick={() => toggleFavorite(item)}
+                  >
+                    <img
+                      src={isFavorite ? heart_fill : heart_bold}
+                      alt="btn_favori"
+                    />
                   </div>
                   <Link to={`/cake/${item.id}`}>
-                   
                     <div className="image_item">
                       <img
                         src={`/assets/images/${item.url_image}.png`}
@@ -44,7 +67,7 @@ function Data() {
                 </div>
               </div>
             );
-          })}
+      })}
 
         <div className="mes_catalogues">
           <Link to="/catalogues">Nos Catalogues</Link>

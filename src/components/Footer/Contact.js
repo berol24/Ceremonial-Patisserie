@@ -5,7 +5,7 @@ import icon_facebook from "../../assets/icons/icon_facebook.png";
 import icon_instagram from "../../assets/icons/icon_instagram.png";
 import icon_youtube from "../../assets/icons/icon_youtube.png";
 import logo_ceremonial from "../../assets/images/logo_footer.png";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 function Contact() {
   return (
@@ -28,19 +28,19 @@ function Contact() {
           </a>
         </div>
         <div>
-          <Link href="https://www.facebook.com/profile.php?id=100076282001637" target="_blank"  rel="noopener noreferrer">
+          <a href="https://www.facebook.com/profile.php?id=100076282001637" target="_blank"  rel="noopener noreferrer">
             <img src={icon_facebook} alt="logo_facebook" />
-          </Link>
+          </a>
         </div>
         <div>
-          <Link href="https://www.instagram.com/ceremonialpatisserie?igsh=MWltcG02dGwwZjd3OQ==" target="_blank">
+          <a href="https://www.instagram.com/ceremonialpatisserie?igsh=MWltcG02dGwwZjd3OQ==" target="_blank" rel="noopener noreferrer">
             <img src={icon_instagram} alt="logo_instagram" />
-          </Link>
+          </a>
         </div>
         <div>
-          <Link href="https://www.youtube.com/@ceremonialpatisserie" target="_blank">
+          <a href="https://www.youtube.com/@ceremonialpatisserie" target="_blank" rel="noopener noreferrer">
             <img src={icon_youtube} alt="logo_youtube" />
-          </Link>
+          </a>
         </div>
 
         {/* <div> <a href='#'><img src= {icon_whatsapp} /> </a></div>

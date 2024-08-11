@@ -8,10 +8,20 @@ import "../../styles/Catalogues_css/Catalogues.css";
 import { Link } from "react-router-dom";
 import SloganText from "../SloganText";
 import heart_bold from "../../assets/images/heart-bold.svg";
+import heart_fill from "../../assets/images/heart-fill.svg"
 function Catalogues() {
   const [data, setData] = useState(null);
   const [name, setName] = useState("");
   const [filteredData, setFilteredData] = useState([]);
+
+  
+  const [favorites, setFavorites] = useState(() => {
+    // Récupérer les favoris depuis le localStorage si disponible
+    const savedFavorites = localStorage.getItem('favorites');
+    return savedFavorites ? JSON.parse(savedFavorites) : [];
+  });
+
+
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -44,6 +54,20 @@ function Catalogues() {
       });
   }, []);
 
+
+
+  const toggleFavorite = (item) => {
+    const isFavorite = favorites.some(fav => fav.id === item.id);
+
+    const updatedFavorites = isFavorite 
+      ? favorites.filter(fav => fav.id !== item.id) // retirer des favoris
+      : [...favorites, item]; // ajouter aux favoris
+
+    setFavorites(updatedFavorites);
+    localStorage.setItem('favorites', JSON.stringify(updatedFavorites));
+  };
+
+
   return (
     <div>
       <Header />
@@ -68,11 +92,19 @@ function Catalogues() {
       </div>
       <div className="catalogue_accueil">
         {filteredData.length > 0 ? (
-          filteredData.map((item) => (
+          filteredData.map((item) => {
+            const isFavorite = favorites.some((fav) => fav.id === item.id);
+            return (
             <div className="catalogue_item" key={item.id}>
               <div className="cake_detail">
-              <div className="icon_favori">
-                    <img src={heart_bold} alt="btn_favori" />
+              <div
+                    className="icon_favori"
+                    onClick={() => toggleFavorite(item)}
+                  >
+                    <img
+                      src={isFavorite ? heart_fill : heart_bold}
+                      alt="btn_favori"
+                    />
                   </div>
                 <Link to={`/cake/${item.id}`} key={item.id}>
                   <div className="image_item">
@@ -86,8 +118,7 @@ function Catalogues() {
                 </Link>{" "}
               </div>
             </div>
-          ))
-        ) : (
+          )})) : (
           <div>Pas de résultat</div>
         )}
       </div>{" "}

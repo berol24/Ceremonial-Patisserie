@@ -31,6 +31,7 @@ const MyRoutes = () => (
         <Route path="login" element={<Login />} />
         <Route path="/cake/:id" element={<CakeDetail />} />
         <Route path="videopresentation" element={<VideoPresentation />} />
+      
     </Routes>
     
   </Router>
