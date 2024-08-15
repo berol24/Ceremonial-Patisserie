@@ -38,6 +38,9 @@ function Navlinks() {
         <li className={`nav-item ${activeLink === '/contact' ? 'active' : ''}`}>
           <Link to='/contact' onClick={() => handleClick('/contact')}>Contact</Link>
         </li>
+        <li className={`nav-item ${activeLink === '/favoris' ? 'active' : ''}`}>
+          <Link to='/favoris' onClick={() => handleClick('/favoris')}>Favoris</Link>
+        </li>
         <li className={`nav-item ${activeLink === '/contact' ? 'active' : ''}`}>
           <Link to='/myFormular' onClick={() => handleClick('/myFormular')}>Formulaire</Link>
         </li>

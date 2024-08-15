@@ -6,7 +6,7 @@ function MyFormular() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(item);
-     let link = "https://wa.me/23756450734?text="+ item; //mettre le texte dans la messagerie  
+     let link = "https://wa.me/23756265982?text="+ item; //mettre le texte dans la messagerie  
     // let link = "https://api.whatsapp.com/send?text="+ item;
     // window.location.href  = link;
     window.open(link, "_blank");

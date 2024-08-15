@@ -32,7 +32,7 @@ const MyRoutes = () => (
         <Route path="login" element={<Login />} />
         <Route path="/cake/:id" element={<CakeDetail />} />
         <Route path="videopresentation" element={<VideoPresentation />} />
-        <Route path="/myFormular" element={<MyFormular />} />
+        <Route path="myFormular" element={<MyFormular />} />
     </Routes>
     
   </Router>
