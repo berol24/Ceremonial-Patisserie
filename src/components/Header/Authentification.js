@@ -6,12 +6,12 @@ function Authentification() {
     <div className="authentification">
       <div className="login_connexion">
        
-        <Link to="/login">
+        <Link to="#">
           <button className="btn_login">Connexion</button>
         </Link>
       </div>
       <div className="register_connexion">
-        <Link to="/register">
+        <Link to="#">
           <button className="btn_register">S'inscrire</button>
         </Link>
       </div>

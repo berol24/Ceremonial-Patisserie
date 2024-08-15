@@ -16,7 +16,7 @@ function MyFormular() {
 
   return (
     <div>
-    <a href="http://localhost:3000/logo_ceremonial.png" download>Download</a>
+    <a href="https://ceremonial-patisserie.netlify.app/logo_ceremonial.png" download>Download</a>
 
       <form action="#" onSubmit={handleSubmit}>
         <div>
