@@ -92,7 +92,7 @@ function MyFormular() {
             value=""
             name="date_livraison"
             id="date_livraison"
-            value="10-25-2002"
+           
           />
         </div>
 
