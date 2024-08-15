@@ -17,7 +17,7 @@ function Home() {
           </div>
           <div className="message_accueil item2">
             <p>
-              Notre mission vous faire sourire avec nos Pâtisseries. Un plaisir
+              Notre mission est de vous faire sourire avec nos Pâtisseries. Un plaisir
               sucré à chaque bouchée, notre pâtisserie est une symphonie de
               saveurs.
             </p>

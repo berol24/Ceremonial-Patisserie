@@ -14,6 +14,7 @@ import Contact from "../components/Contact/Contact";
 import Favoris from "../components/Favoris/Favoris";
 import CakeDetail from "../components/CakeDetail/CakeDetail";
 import VideoPresentation from "../components/VideoPresentation/VideoPresentation";
+import MyFormular from "../components/MyFormular";
 
 const MyRoutes = () => (
   <Router>
@@ -31,7 +32,7 @@ const MyRoutes = () => (
         <Route path="login" element={<Login />} />
         <Route path="/cake/:id" element={<CakeDetail />} />
         <Route path="videopresentation" element={<VideoPresentation />} />
-      
+        <Route path="/myFormular" element={<MyFormular />} />
     </Routes>
     
   </Router>
