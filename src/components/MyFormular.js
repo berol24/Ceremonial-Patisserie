@@ -1,98 +1,115 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 function MyFormular() {
   const [item, setItem] = useState("");
+  const [link, setLink] = useState("");
+
+  useEffect(() => {
+    // Fonction pour mettre à jour le lien en fonction de la largeur de l'écran
+    const updateLink = () => {
+      if (window.innerWidth <= 768) {
+        setLink("https://wa.me/23756265982?text=" + item);
+      } else {
+        setLink("https://api.whatsapp.com/send?text=" + item);
+      }
+    };
+
+    // Appeler updateLink une première fois lors du chargement
+    updateLink();
+
+    // Écouter les changements de taille de l'écran
+    window.addEventListener("resize", updateLink);
+
+    // Nettoyer l'écouteur lors du démontage du composant
+    return () => {
+      window.removeEventListener("resize", updateLink);
+    };
+  }, [item]); // Re-run effect when item changes
 
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(item);
-     let link = "https://wa.me/23756265982?text="+ item; //mettre le texte dans la messagerie  
-    // let link = "https://api.whatsapp.com/send?text="+ item;
-    // window.location.href  = link;
     window.open(link, "_blank");
   };
 
-
-
   return (
     <div>
-    <a href="https://ceremonial-patisserie.netlify.app/logo_ceremonial.png" download>Download</a>
+      <a href="https://ceremonial-patisserie.netlify.app/logo_ceremonial.png" download>Download</a>
 
       <form action="#" onSubmit={handleSubmit}>
         <div>
-          <label for="">Nom produit</label>
+          <label htmlFor="nom_produit">Nom produit</label>
           <input
             type="text"
+            id="nom_produit"
             value={item}
             onChange={(e) => setItem(e.target.value)}
           />
         </div>
         <div>
-          <label for="">Quantité</label>
-          <input type="number" name="quantite" id="quantite" value="10" />
+          <label htmlFor="quantite">Quantité</label>
+          <input type="number" name="quantite" id="quantite" defaultValue="10" />
         </div>
         <div>
-          <label for="">Prix</label>
-          <input type="number" name="prix" id="prix" value="5000" />
+          <label htmlFor="prix">Prix</label>
+          <input type="number" name="prix" id="prix" defaultValue="5000" />
         </div>
         <div>
-          <label for="">Prix Total</label>
+          <label htmlFor="prix_total">Prix Total</label>
           <input type="number" name="prix_total" id="prix_total" />
         </div>
         <div>
-          <label for="">Nom client</label>
+          <label htmlFor="nom_client">Nom client</label>
           <input
             type="text"
             name="nom_client"
             id="nom_client"
-            value="azazazaa"
+            defaultValue="azazazaa"
           />
         </div>
         <div>
-          <label for="">Numéro de téléphone</label>
+          <label htmlFor="numero_telephone">Numéro de téléphone</label>
           <input
             type="text"
             name="numero_telephone"
             id="numero_telephone"
-            value="742575757"
+            defaultValue="742575757"
           />
         </div>
 
         <div>
-          <label for="">Lieu de livraison : </label>
+          <label htmlFor="lieu_livraison">Lieu de livraison : </label>
           <input
             type="checkbox"
             id="ceremonial"
             name="ceremonial"
             value="ceremonial"
           />
-          <label for="">Cérémonial</label>
+          <label htmlFor="ceremonial">Cérémonial</label>
           <input type="checkbox" id="autre" name="autre" value="autre" />
-          <label for="">Autres</label>
+          <label htmlFor="autre">Autres</label>
           <input
             type="text"
             id="autre_lieu"
             name="autre_lieu"
-            value="ertyfdsqdf"
+            defaultValue="ertyfdsqdf"
           />
         </div>
         <div>
-          <label for="">Description du produit</label>
+          <label htmlFor="description_produit">Description du produit</label>
           <input
             type="text"
             name="description_produit"
             id="description_produit"
-            value="azazazaa"
+            defaultValue="azazazaa"
           />
         </div>
         <div>
-          <label for="">Date de livraison</label>
+          <label htmlFor="date_livraison">Date de livraison</label>
           <input
             type="date"
-            value=""
             name="date_livraison"
             id="date_livraison"
-           
           />
         </div>
 
@@ -100,7 +117,7 @@ function MyFormular() {
       </form>
 
       <br />
-      <div class="myText"></div>
+      <div className="myText"></div>
     </div>
   );
 }
