@@ -35,12 +35,12 @@ function MyFormular() {
       *${item_description_produit}*. 
 
 Pour la décoration, j'aimerais que *${item_preference}*. En plus ${
-    item_quantite == 1 ? "du gâteau" : "des gâteaux"
+    item_quantite === 1 ? "du gâteau" : "des gâteaux"
   }  , je voudrais également ajouter *${item_produit_ajout}*.
 
 Merci de livrer la commande à *${item_lieu_livraison}* le *${item_date_livraison}*. Vous pouvez me contacter au *${item_numero_telephone}*si nécessaire. 
 Pour le paiement,  ${
-    selectedPayment == "Espèces"
+    selectedPayment === "Espèces"
       ? "je préfère payer en espèces."
       : "je préfère utiliser " + selectedPayment
   }.
@@ -221,7 +221,7 @@ Cordialement,
               </div>
               <div>
                 <div className="image_paiement">
-                  {" "}
+               =
                   <img src={image_orange} />
                 </div>
                 <input
