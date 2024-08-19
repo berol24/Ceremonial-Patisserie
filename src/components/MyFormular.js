@@ -208,7 +208,7 @@ Cordialement,
             <section>
               <div>
                 <div className="image_paiement">
-                  <img src={image_MTN} />
+                  <img src={image_MTN} alt="image_MTN"/>
                 </div>
                 <input
                   type="radio"
@@ -222,7 +222,7 @@ Cordialement,
               <div>
                 <div className="image_paiement">
                =
-                  <img src={image_orange} />
+                  <img src={image_orange} alt="image_orange"/>
                 </div>
                 <input
                   type="radio"
@@ -235,7 +235,7 @@ Cordialement,
               </div>
               <div>
                 <div className="image_paiement">
-                  <img src={image_espece} />
+                  <img src={image_espece} alt="image_espece" />
                 </div>
                 <input
                   type="radio"
