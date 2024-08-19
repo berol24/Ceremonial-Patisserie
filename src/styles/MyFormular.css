@@ -1,0 +1,156 @@
+.formular {
+    border: 2px solid red;
+}
+
+.formular form {
+    border: 2px solid purple;
+    margin: auto;
+    background-color: #D9D9D9;
+    width: 70%;
+}
+
+.formular .form-container {
+    border: 3px solid green;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin: 16px auto;
+    width: 100%;
+    border: 2px solid green;
+}
+
+.form-group input[type=text],
+input[type=number],
+textarea {
+    width: 100%;
+    height: 50px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    border: none;
+}
+
+.form-group textarea {
+    height: auto;
+}
+
+#date {
+    height: 45px;
+}
+
+label {
+    color: black;
+    margin-bottom: 9px;
+}
+
+.image_paiement {
+    width: 100px;
+}
+
+.image_paiement img {
+    width: 100%;
+}
+
+.form-group section {
+    display: flex;
+    border: 2px solid red;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-group section > div {
+    border: 2px solid purple;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-group section > div input[type=radio] {
+    margin-left: 10px;
+}
+
+#espece {
+    margin-top: 0;
+}
+
+.btn {
+    border: 2px solid purple;
+    display: flex;
+    justify-content: space-between;
+    margin: 15px auto;
+    width: 70%;
+}
+
+.btn button {
+    width: 100%;
+    height: 56px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn button[type=button] {
+    background-color: white;
+    margin: 10px;
+}
+
+.btn button[type=button]:hover {
+   opacity: 0.8;
+}
+
+
+.btn button[type=submit] {
+    background-color: #D93232;
+    color: white;
+    margin: 10px;
+}
+
+.btn button[type=submit]:hover  {
+    opacity: 0.8;
+ 
+}
+
+.form-group textarea {
+   resize: none;
+   scrollbar-width: auto;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .formular .form-container {
+        padding: 20px;
+        gap: 10px;
+    }
+
+    .form-group {
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .btn {
+        flex-direction: column;
+        gap: 10px;
+        width: 70%;
+        height: 70%;
+    }
+
+    .btn button {
+        width: 100%;
+    }
+
+   
+    .form-group section {
+        flex-direction: column;
+    }
+
+    .form-group section > div {
+        flex-direction: row;
+    }
+}
