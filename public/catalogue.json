@@ -2,7 +2,7 @@
     {
       "id": 1,
       "name": "delectus1",
-      "description": "delectus aut aut",
+      "description": "Note that the development build is not optimized.To create a production build, use npm run build.",
       "price": 2500,
       "url_image": "cake_heart"
     },
