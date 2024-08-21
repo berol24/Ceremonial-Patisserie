@@ -40,6 +40,7 @@
   max-height: 90vh; /* Limite la hauteur de la pop-up à 80% de la hauteur de la fenêtre */
   overflow-y: auto; /* Permet de scroller le contenu à l'intérieur si nécessaire */
   position: relative;
+  margin: 25px;
 }
 
 .popup-content section{
