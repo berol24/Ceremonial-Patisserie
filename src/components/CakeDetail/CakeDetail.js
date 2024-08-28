@@ -1,17 +1,26 @@
 
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams ,useNavigate} from "react-router-dom";
 import "../../styles/CakeDetail_css/CakeDetail.css";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import SloganText from "../SloganText";
-import MyFormular from "../MyFormular"; // Import du formulaire
+import MyFormular from "../MyFormular";
+import icone_delete from "../../assets/images/delete.svg";
 
 function CakeDetail() {
   const { id } = useParams();
   const [cake, setCake] = useState(null);
   const [quantity, setQuantity] = useState(0);
   const [showFormular, setShowFormular] = useState(false); // État pour la pop-up
+
+  const navigate = useNavigate();
+
+  const handleCommandeClick = () => {
+    navigate(-1);  // -1 permet de revenir à la page précédente
+  };
+
+
 
   useEffect(() => {
     fetch("/catalogue.json")
@@ -42,48 +51,51 @@ function CakeDetail() {
     setShowFormular(false); // Ferme le formulaire en pop-up
   };
 
+
+
   return (
     <div>
       <Header />
 
-      <h1>Détails de ma commande</h1>
+      <h1 className="title_detail_commande">Détails de ma commande</h1>
       <div className="detail_commande" key={cake.id}>
         <div className="left_detail_commande">
           <img src={`/assets/images/${cake.url_image}.png`} alt={cake.name} />
+
         </div>
         <div className="right_detail_commande">
-          <div>
+          <div className="name_price">
             <span>{cake.name}</span>
             <span>{cake.price} fcfa</span>
           </div>
 
-          <div>
-            <p>{cake.description}</p>
+          <div className="description_cake">
+            <p>{cake.description}lorem lorem ipdsdsdsdslorem ipdsdsdsdslorem ipdsdsdsdslorem ipdsdsdsdslorem ipdsdsdsdslorem ipdsdsdsdslorem ipdsdsdsds</p>
           </div>
 
-          <div>
-            <section>
-              <span onClick={decrementQuantity} style={{ cursor: "pointer" }}>
+          <div  className="btn_add_remove">
+            <section className="btn_qty">
+              <div className="btn_add_remove_item" onClick={decrementQuantity} style={{ cursor: "pointer" }}>
                 -
-              </span>
+              </div>
               <span className="qte_cake">{quantity.toString().padStart(2, "0")}</span>
-              <span onClick={incrementQuantity} style={{ cursor: "pointer" }}>
+              <div className="btn_add_remove_item" onClick={incrementQuantity} style={{ cursor: "pointer" }}>
                 +
-              </span>
+              </div>
             </section>
-            <section>
+            <section className="btn_price">
               <span>{totalPrice} fcfa</span>
             </section>
           </div>
 
-          <div>
+          <div className="commande" >
             <button type="button" onClick={handleCommanderClick}>
               Commander
             </button>
           </div>
 
-          <div>
-            <span style={{ cursor: "pointer" }}>x</span>
+          <div className="cancel" onClick={handleCommandeClick}>
+            <span style={{ cursor: "pointer" }}><img src={icone_delete} alt="delete" /> </span>
           </div>
         </div>
       </div>
