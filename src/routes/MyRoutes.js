@@ -10,7 +10,7 @@ import Update from "../components/Update/Update";
 import Catalogues from "../components/Catalogues/Catalogues";
 import Realisations from "../components/Realisations/Realisations";
 import Apropos from "../components/Apropos/Apropos";
-import Contact from "../components/Contact/Contact";
+import Contacts from "../components/Contacts/Contacts";
 import Favoris from "../components/Favoris/Favoris";
 import CakeDetail from "../components/CakeDetail/CakeDetail";
 import VideoPresentation from "../components/VideoPresentation/VideoPresentation";
@@ -26,7 +26,7 @@ const MyRoutes = () => (
         <Route path="catalogues" element={<Catalogues />} />
         <Route path="realisations" element={<Realisations />} />
         <Route path="apropos" element={<Apropos />} />
-        <Route path="contact" element={<Contact />} />
+        <Route path="contacts" element={<Contacts />} />
         <Route path="favoris" element={<Favoris />} />
         <Route path="register" element={<Register />} />
         <Route path="login" element={<Login />} />

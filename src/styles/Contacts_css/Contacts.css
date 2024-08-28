@@ -1,0 +1,103 @@
+.contact-title , .paiement-title{
+    text-align: center;
+    color: white;
+    background-color: #D93232;
+    width: 39%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+}
+
+.contact-contain{
+    border: 3px solid red;
+    background-color: #FFBC10;
+    width: 70%;
+    margin: auto;
+}
+
+.contactez-nous{
+    border: 2px solid green;
+}
+
+.contact-telephone , .contact-email ,.contact-map{
+    border: 2px solid purple;
+    margin: 50px auto;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-telephone span:nth-child(2), .contact-email span:nth-child(2),.contact-map span:nth-child(2){
+    border: 2px solid green;
+    margin-left: 10px;
+    font-weight: bold;
+    width: 36%;
+}
+
+.contact-telephone div img, .contact-email div img,.contact-map  div img{
+    width: 30px;
+}
+
+
+
+.paiement{
+    border: 2px solid purple;
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 50px auto;
+}
+
+.paiement .mtn div img , .paiement .orange div img{
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.paiement .mtn span , .paiement .orange span{
+   font-weight: bold;
+}
+
+@media  screen and (max-width: 768px) {
+
+    .contact-telephone , .contact-email ,.contact-map{
+        border: 2px solid purple;
+        margin: 50px auto;
+        width: 85%;
+        display: flex;
+     flex-direction: column;
+    }
+
+    .contact-title , .paiement-title{
+      
+        width: 53%;
+        height: 49px;
+        font-size: 100%;
+        padding: 5px;
+  }
+
+
+  .contact-telephone span:nth-child(2), .contact-email span:nth-child(2),.contact-map span:nth-child(2){
+    border: 2px solid green;
+    margin: 10px auto;
+    font-weight: bold;
+    width: 84%;
+    text-align: center;
+}
+
+.contact-contain{
+    width: 100%;
+}
+
+.paiement{
+    display: flex;
+    flex-direction: column;
+    height: 260px;
+}
+
+}
+  

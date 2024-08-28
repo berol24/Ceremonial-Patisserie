@@ -35,15 +35,15 @@ function Navlinks() {
         <li className={`nav-item ${activeLink === '/apropos' ? 'active' : ''}`}>
           <Link to='/apropos' onClick={() => handleClick('/apropos')}>A propos</Link>
         </li>
-        <li className={`nav-item ${activeLink === '/contact' ? 'active' : ''}`}>
-          <Link to='/contact' onClick={() => handleClick('/contact')}>Contact</Link>
+        <li className={`nav-item ${activeLink === '/contacts' ? 'active' : ''}`}>
+          <Link to='/contacts' onClick={() => handleClick('/contacts')}>Contact</Link>
         </li>
         <li className={`nav-item ${activeLink === '/favoris' ? 'active' : ''}`}>
           <Link to='/favoris' onClick={() => handleClick('/favoris')}>Favoris</Link>
         </li>
-        <li className={`nav-item ${activeLink === '/contact' ? 'active' : ''}`}>
+        {/* <li className={`nav-item ${activeLink === '/contact' ? 'active' : ''}`}>
           <Link to='/myFormular' onClick={() => handleClick('/myFormular')}>Formulaire</Link>
-        </li>
+        </li> */}
       </ul>
     </div>
   )
