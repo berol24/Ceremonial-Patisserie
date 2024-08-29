@@ -2,7 +2,7 @@ import React from "react";
 import "../../styles/Header_css/Header.css";
 import logo_ceremonial from "../../assets/images/logo_ceremonial.svg";
 import Navlinks from "./Navlinks";
-import Authentification from "./Authentification";
+// import Authentification from "./Authentification";
 import { Link } from 'react-router-dom';
 
 function Header() {
