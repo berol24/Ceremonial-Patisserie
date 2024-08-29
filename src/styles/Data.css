@@ -1,5 +1,5 @@
 .catalogue_accueil {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     display: flex;
     flex-wrap: wrap;
     margin-top: 100px;
@@ -62,21 +62,21 @@ text-align: center;
     justify-content:center;
     width: 460px;
     height: 90px;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     margin: 90px;
     align-items: center;
    
  }
 
  .mes_catalogues a{
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
       font-size: 28px; 
 
  }
 
 
  .icon_favori{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     position: absolute;
     top: 0;
     left: 85%;

@@ -56,9 +56,7 @@ function CakeDetail() {
   return (
     <div>
       <Header />
-      <a href="tel:+33610810730" target="_blank"  rel="noopener noreferrer">
-        <img src="#" alt="Téléphone" class="phone-icon" />
-      </a>
+    
       <h1 className="title_detail_commande">Détails de ma commande</h1>
       <div className="detail_commande" key={cake.id}>
         <div className="left_detail_commande">
@@ -71,7 +69,7 @@ function CakeDetail() {
           </div>
 
           <div className="description_cake">
-            <p>{cake.description}lorem lorem ipdsdsdsdsloremipdsdsdsdsloremipdsdsdsdslipdipdsdsdsdsloremipdsdsdsdsloremipdsdsdsdsloremipdsdsdsdsloremipdsdsdsdsloremipdsdsdsdsloremipdsdsdsdsipdsdsdsdsloremipdsdsdsdsloremipdsdsdsdsloremipdsdsdsdsloremipdsdsdsdsloremipdsdsdsdsloremipdsdsdsdssdsdsdsloremipdsdsdsdsloremipdsdsdsdsloremipdsdsdsdsloremipdsdsdsdsloremipdsdsdsdsloremipdsdsdsdsoremipdsdsdsdsloremipdsdsdsdsloremipdsdsdsdsloremipdsdsdsds</p>
+            <p>{cake.description} zazazazazazazazazazzazzazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazzazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazaz</p>
           </div>
 
           <div  className="btn_add_remove">

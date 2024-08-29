@@ -5,9 +5,9 @@ function Copyright() {
   return (
     <div className='copyright'>
        <p>
-       Copyright © 2024 - Tous droits réservés Pep's Extra - <span> https://lien du site - https://forum-peps-extra.com</span>
+       Copyright © 2024 - Tous droits réservés  - <span> ceremonial Patisserie /</span>
       
-     <span> horaires d'ouverture  / mentions legales</span>
+     <span> mentions legales</span>
        </p>
     </div>
   )

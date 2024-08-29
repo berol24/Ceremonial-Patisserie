@@ -29,7 +29,7 @@
 }
 
 .container {
-    border: 2px solid green;
+    /* border: 2px solid green; */
     height: auto;
     display: flex;
     justify-content: space-between;
@@ -39,27 +39,27 @@
 
 .container .image_left,
 .container .image_right {
-    border: 2px solid purple;
+    /* border: 2px solid purple; */
     width: 30%;
     height: auto;
 }
 
 .container .image_left .img_real,
 .container .image_right .img_real {
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     width: 300px;
     margin: 50px;
 }
 
 .container .image_left .img_real img,
 .container .image_right .img_real img {
-    border: 2px solid purple;
+    /* border: 2px solid purple; */
     width: 100%;
     border-radius: 10px;
 }
 
 .container .text_center {
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     width: 30%;
     height: 100%;
     line-height: 2;

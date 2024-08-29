@@ -1,30 +1,12 @@
-/* .navlinks{
-    border: 1px solid rgb(128, 0, 0);
-    width: 700px;
-}
-
-.navlinks .nav-items{
-    border: 1px solid purple;
-    display: flex;
-    max-width: 100%;
-}
-
-.navlinks .nav-items .nav-item{
-    list-style: none;
-    color: #FFBC10;
-    font-size: 20px;
-    margin: 0 20px;
-
-} */
 
 
 .navlinks{
-    border: 1px solid rgb(128, 0, 0);
+    /* border: 1px solid rgb(128, 0, 0); */
     width: 920px;
 }
 
 .navlinks .nav-items{
-    border: 1px solid purple;
+    /* border: 1px solid purple; */
     display: flex;
     max-width: 100%;
 }

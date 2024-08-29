@@ -13,7 +13,7 @@
 }
 
 .bloc_left {
-    border: 1px solid green;
+    /* border: 1px solid green; */
     margin-left: 130px;
 }
 
@@ -41,7 +41,7 @@
 .accueil .button_start {
     width: 260px;
     height: 86px;
-    border: 1px solid purple;
+    /* border: 1px solid purple; */
 }
 
 .accueil .button_start button {
@@ -59,7 +59,7 @@
 .bloc_right {
     height: 720px;
     width: 514px;
-    border: 1px solid purple;
+    /* border: 1px solid purple; */
     margin-right: 130px;
 }
 
