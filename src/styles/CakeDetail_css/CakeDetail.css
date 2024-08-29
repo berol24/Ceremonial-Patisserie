@@ -271,7 +271,7 @@ font-weight: bold;
 }
   
   .right_detail_commande .name_price{
-    border: 2px solid red;
+   
     display: flex;
     flex-direction: column;
     text-align: center;

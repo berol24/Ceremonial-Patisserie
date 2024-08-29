@@ -106,7 +106,7 @@ Cordialement,
               <div className="form-group">
                 <label htmlFor="quantite">Quantité</label>
                 <input
-                  type="number"
+                  type="text"
                   name="quantite"
                   id="quantite"
                   value={props.cake_quantite}
@@ -116,7 +116,7 @@ Cordialement,
               <div className="form-group">
                 <label htmlFor="prix_unitaire">Prix unitaire</label>
                 <input
-                  type="number"
+                  type="text"
                   name="prix_unitaire"
                   id="prix_unitaire"
                   value={props.cake_prix_unitaire}
@@ -125,7 +125,7 @@ Cordialement,
               <div className="form-group">
                 <label htmlFor="prix_total">Prix Total</label>
                 <input
-                  type="number"
+                  type="text"
                   name="prix_total"
                   id="prix_total"
                   value={props.cake_prix_total}

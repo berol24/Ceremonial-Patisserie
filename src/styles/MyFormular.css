@@ -31,7 +31,7 @@
 }
 
 .form-group input[type=text],
-input[type=number],
+/* input[type=number], */
 textarea {
     width: 95%;
     height: 50px;
@@ -39,6 +39,7 @@ textarea {
     overflow-y: scroll;
     border: none;
     margin: auto;
+    font-size: 21px;
 }
 
 .form-group textarea {

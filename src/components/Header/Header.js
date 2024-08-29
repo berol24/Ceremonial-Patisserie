@@ -14,9 +14,9 @@ function Header() {
       <div className="nav-links">
         <Navlinks/>
       </div>
-      <div className="login_register">
+      {/* <div className="login_register">
         <Authentification />
-      </div>
+      </div> */}
     </div>
   );
 }

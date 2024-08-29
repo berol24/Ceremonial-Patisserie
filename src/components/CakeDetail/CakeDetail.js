@@ -69,7 +69,7 @@ function CakeDetail() {
           </div>
 
           <div className="description_cake">
-            <p>{cake.description} zazazazazazazazazazzazzazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazzazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazazaz</p>
+            <p>{cake.description} </p>
           </div>
 
           <div  className="btn_add_remove">
@@ -88,12 +88,14 @@ function CakeDetail() {
           </div>
 
           <div className="commande" >
-            <button type="button" onClick={handleCommanderClick}>
-              Commander
-            </button>
+          {quantity.toString().padStart(2, "0") === "00" ?(
+    ""
+  ): (
+    <button type="button" onClick={handleCommanderClick}>Commander</button>
+  )  }
           </div>
 
-          <div className="cancel" onClick={handleCommandeClick}>
+          <div className="cancel"  onClick={handleCommandeClick}>
             <span style={{ cursor: "pointer" }}><img src={icone_delete} alt="delete" /> </span>
           </div>
         </div>
