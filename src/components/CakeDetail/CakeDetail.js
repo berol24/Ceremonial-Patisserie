@@ -64,7 +64,7 @@ function CakeDetail() {
         </div>
         <div className="right_detail_commande">
           <div className="name_price">
-            <span>{cake.name}</span>
+            <span className="name_cake">{cake.name}</span>
             <span>{cake.price} fcfa</span>
           </div>
 

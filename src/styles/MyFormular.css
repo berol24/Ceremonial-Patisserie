@@ -42,8 +42,13 @@ textarea {
     font-size: 21px;
 }
 
+/* .form-group #form-item{
+    font-size: 14px;
+} */
+
 .form-group textarea {
     height: auto;
+  
 }
 
 #date {
@@ -186,6 +191,16 @@ border: none;
         width: 90%; /* Augmentation de la largeur pour une meilleure utilisation de l'espace */
         margin: 10px auto;
     }
+    .form-group textarea{
+        font-size: 14px;
+    }
+
+
+    .form-group .form-item::placeholder{
+border: 5px solid red;
+font-size: 14px;
+    }
+
 
     .btn {
         flex-direction: column;

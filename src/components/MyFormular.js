@@ -40,7 +40,7 @@ Pour la décoration, j'aimerais que *${item_preference}*. En plus ${
     props.cake_quantite === 1 ? "du gâteau" : "des gâteaux"
   }  , je voudrais également ajouter *${item_produit_ajout}*.
 
-Merci de livrer la commande à *${item_lieu_livraison}* le *${item_date_livraison}*. Vous pouvez me contacter au *${item_numero_telephone}* si nécessaire. 
+Merci de livrer la commande à l'adresse suivante *${item_lieu_livraison}* le *${item_date_livraison}*. Vous pouvez me contacter au *${item_numero_telephone}* si nécessaire. 
 Pour le paiement,  ${
     selectedPayment === "Espèces"
       ? "je préfère payer en espèces."
@@ -138,11 +138,12 @@ Cordialement,
                 <textarea
                   name="description_produit"
                   id="description_produit"
+                  className="form-item"
                   value={item_description_produit}
                   onChange={(e) => setItem_description_produit(e.target.value)}
-                  rows="5"
+                  rows="8"
                   cols="5"
-                  placeholder="Je veux un gâteau de forme ronde et de couleur de crème rouge avec un peu de pincée de noisette au dessus , je ne veux pas trop de sucre , pas de vanille "
+                  placeholder=" Décrivez nous comment vous souhaitez avoir votre gâteau . Par exemple : Je veux un gâteau de forme ronde et de couleur de crème rouge avec un peu de pincée de noisette au dessus , je ne veux pas trop de sucre , pas de vanille "
                 ></textarea>
               </div>
               <div className="form-group">
@@ -150,22 +151,27 @@ Cordialement,
                 <textarea
                   name="preference"
                   id="preference"
+                  className="form-item"
                   value={item_preference}
                   onChange={(e) => setItem_preference(e.target.value)}
-                  rows="5"
+                  rows="6"
                   cols="5"
-                  placeholder="Par exemple : Je  veux que le nom à ecrire  sur le gâteau soit : Joyeux anniversaire CARES , avec une bougie"
+                  placeholder="Donnez  nous une préferérence que vous souhaitez avoir sur votre gâteau . Par exemple : Je  veux que le nom à ecrire  sur le gâteau soit : Joyeux anniversaire CARES , avec une bougie"
                 ></textarea>
               </div>
               <div className="form-group">
                 <label htmlFor="produit_ajout">Produit en ajout</label>
-                <input
+                <textarea
                   type="text"
                   name="produit_ajout"
                   id="produit_ajout"
+                  className="form-item"
                   value={item_produit_ajout}
                   onChange={(e) => setItem_produit_ajout(e.target.value)}
-                  placeholder="Du champagne , du vin , des bougies ,etc."
+                  placeholder="Souhaitez vous ajouter un produit ? Par exemple :  Du champagne , du vin , des bougies ,etc."
+                 rows="5"
+                  
+                
                 />
               </div>
               <div className="form-group">
@@ -176,6 +182,7 @@ Cordialement,
                   type="text"
                   name="nom_prenom_client"
                   id="nom_prenom_client"
+                  className="form-item"
                   value={item_nom_prenom_client}
                   onChange={(e) => setItem_nom_prenom_client(e.target.value)}
                   placeholder="Ceremonial Patisserie"
@@ -187,6 +194,7 @@ Cordialement,
                   type="text"
                   name="numero_telephone"
                   id="numero_telephone"
+                  className="form-item"
                   value={item_numero_telephone}
                   onChange={(e) => setItem_numero_telephone(e.target.value)}
                   placeholder="655810768"
@@ -198,6 +206,7 @@ Cordialement,
                   type="text"
                   name="lieu_livraison"
                   id="lieu_livraison"
+                  className="form-item"
                   value={item_lieu_livraison}
                   onChange={(e) => setItem_lieu_livraison(e.target.value)}
                   placeholder="Ceremonial patisserie / Bonapriso/Dakar/Bonamoussadi /Ndogbong / etc... "
