@@ -1,0 +1,14 @@
+h1, h2 {
+    color: #333;
+}
+p {
+    margin-bottom: 15px;
+}
+
+
+.mentions_legales{
+    font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            padding: 0;
+}

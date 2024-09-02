@@ -16,3 +16,7 @@
 .copyright p span{
   color:  red;
 }
+
+.copyright a {
+ text-decoration: none;
+}

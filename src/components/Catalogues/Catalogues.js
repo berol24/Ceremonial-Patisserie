@@ -115,13 +115,13 @@ function Catalogues() {
                   </div>
                   <h2 className="cake_name">{item.name}</h2>
                   <p className="cake_price">{item.price} fcfa</p>
-                </Link>{" "}
+                </Link>
               </div>
             </div>
           )})) : (
           <div>Pas de résultat</div>
         )}
-      </div>{" "}
+      </div>
       <SloganText />
       <Footer />
     </div>

@@ -1,5 +1,6 @@
 import React from 'react'
 import "../../styles/Footer_css/Copyright.css"
+import { Link } from 'react-router-dom'
 
 function Copyright() {
   return (
@@ -7,7 +8,7 @@ function Copyright() {
        <p>
        Copyright © 2024 - Tous droits réservés  - <span> ceremonial Patisserie /</span>
       
-     <span> mentions legales</span>
+     <Link to='/mentions-legales' > mentions legales</Link>
        </p>
     </div>
   )

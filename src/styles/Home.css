@@ -6,7 +6,6 @@
     width: 100%;
     height: 720px;
     margin: auto;
-    border: 1px solid blue;
     border-top: 5px solid #FFBC10;
     background-color: #FFBC10;
     opacity: 0.9;
@@ -146,7 +145,7 @@
 
     .bloc_right {
         margin: -35px auto -21px;
-        border: 1px solid red;
+      
         height: 548px;
     }
 

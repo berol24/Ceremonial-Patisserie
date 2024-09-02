@@ -1,0 +1,41 @@
+
+#about {
+    background-color: #f8f8f8; 
+    padding: 50px 20px; 
+    font-family: 'Georgia', serif; 
+     
+}
+
+#about .container {
+    max-width: 800px;
+    margin: 0 auto; 
+}
+
+#about h2 {
+    font-size: 36px; 
+    text-align: center; 
+    color: #D93232; 
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 18px; 
+    line-height: 1.6; 
+    margin-bottom: 20px; 
+    text-align: justify; 
+}
+
+
+@media (max-width: 768px) {
+    #about {
+        padding: 70px 40px; 
+    }
+    
+    #about h2 {
+        font-size: 25px; 
+    }
+    
+    #about p {
+        font-size: 20px; 
+    }
+}

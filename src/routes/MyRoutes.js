@@ -15,6 +15,7 @@ import Favoris from "../components/Favoris/Favoris";
 import CakeDetail from "../components/CakeDetail/CakeDetail";
 import VideoPresentation from "../components/VideoPresentation/VideoPresentation";
 import MyFormular from "../components/MyFormular";
+import MentionsLegales from "../components/mentionsLegales/MentionsLegales";
 
 const MyRoutes = () => (
   <Router>
@@ -33,6 +34,7 @@ const MyRoutes = () => (
         <Route path="/cake/:id" element={<CakeDetail />} />
         <Route path="videopresentation" element={<VideoPresentation />} />
         <Route path="myFormular" element={<MyFormular />} />
+        <Route path="mentions-legales" element={<MentionsLegales />} />
     </Routes>
     
   </Router>

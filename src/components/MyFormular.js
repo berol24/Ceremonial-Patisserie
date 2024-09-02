@@ -36,7 +36,7 @@ function MyFormular(props) {
      }* FCFA, ce qui fait un total de *${props.cake_prix_total}* FCFA.
       *${item_description_produit}*. 
 
-Pour la décoration, j'aimerais que *${item_preference}*. En plus ${
+  ${item_preference ? `Pour la décoration, j'aimerais que *${item_preference}*.` : ""} En plus ${
     props.cake_quantite === 1 ? "du gâteau" : "des gâteaux"
   }  , je voudrais également ajouter *${item_produit_ajout}*.
 
@@ -144,6 +144,7 @@ Cordialement,
                   rows="8"
                   cols="5"
                   placeholder=" Décrivez nous comment vous souhaitez avoir votre gâteau . Par exemple : Je veux un gâteau de forme ronde et de couleur de crème rouge avec un peu de pincée de noisette au dessus , je ne veux pas trop de sucre , pas de vanille "
+                  required
                 ></textarea>
               </div>
               <div className="form-group">
@@ -186,6 +187,7 @@ Cordialement,
                   value={item_nom_prenom_client}
                   onChange={(e) => setItem_nom_prenom_client(e.target.value)}
                   placeholder="Ceremonial Patisserie"
+                  required
                 />
               </div>
               <div className="form-group">
@@ -210,6 +212,7 @@ Cordialement,
                   value={item_lieu_livraison}
                   onChange={(e) => setItem_lieu_livraison(e.target.value)}
                   placeholder="Ceremonial patisserie / Bonapriso/Dakar/Bonamoussadi /Ndogbong / etc... "
+                  required
                 />
               </div>
               <div className="form-group" id="date">
@@ -223,6 +226,8 @@ Cordialement,
                   value={item_date_livraison}
                   onChange={handleDateChange}
                   placeholder="12/05/2025  15:30"
+                  required
+
                 />
               </div>
               <div className="form-group ">
