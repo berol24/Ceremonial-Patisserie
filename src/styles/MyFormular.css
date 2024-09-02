@@ -1,6 +1,6 @@
 
 .formular {
-    /* border: 2px solid red; */
+ 
     height: 100vh;
     display: flex;
     align-items: center;
@@ -8,7 +8,7 @@
 }
 
 .formular form {
-    /* border: 2px solid purple; */
+    
     margin: auto;
     background-color: #FFBC10;
     width: 90%;
@@ -71,13 +71,13 @@ label {
 
 .form-group section {
     display: flex;
-    /* border: 2px solid red; */
+  
     flex-direction: column;
     gap: 10px;
 }
 
 .form-group section > div {
-    /* border: 2px solid purple; */
+
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -134,7 +134,7 @@ label {
 
 
 .validation{
-    /* border: 2px solid red; */
+  
     height: 130px;
     display: flex;
     align-items: center;
@@ -197,7 +197,6 @@ border: none;
 
 
     .form-group .form-item::placeholder{
-border: 5px solid red;
 font-size: 14px;
     }
 
