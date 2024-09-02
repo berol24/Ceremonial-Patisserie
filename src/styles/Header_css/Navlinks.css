@@ -46,7 +46,8 @@ color: #FFBC10;
     }
 
     .navlinks .nav-items {
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
+        flex-direction: column;
         margin: 0;
     }
 
