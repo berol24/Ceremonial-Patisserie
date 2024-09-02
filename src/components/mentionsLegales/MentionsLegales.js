@@ -17,7 +17,7 @@ function MentionsLegales() {
         
         <h2>Édition du site</h2>
         <p>
-            Le présent site, accessible à l’URL <a href="https://ceremonial-patisserie.netlify.app/" target="_blank">https://ceremonial-patisserie.netlify.app/</a>
+            Le présent site, accessible à l’URL <a href="https://ceremonial-patisserie.netlify.app/" target="_blank"  rel="noopener noreferrer">https://ceremonial-patisserie.netlify.app/</a>
             , est édité par :
         </p>
         <p>
