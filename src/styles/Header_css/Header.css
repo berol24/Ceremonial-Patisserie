@@ -67,12 +67,12 @@
   }
   
     .nav-links.show {
-    display: block;
-    position: absolute;
-    top: 30%;
-    width: 55%;
-    left: 45%;
-    opacity: 0.9;
+        display: block;
+        left: 47%;
+        opacity: 0.9;
+        position: absolute;
+        top: 30%;
+        width: 53%;
     }
 
     .nav-links .icon {
