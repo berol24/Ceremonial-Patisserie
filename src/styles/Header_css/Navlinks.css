@@ -39,7 +39,7 @@ color: #FFBC10;
   
   
 
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   
     .navlinks {
         width: 100%;
@@ -47,11 +47,15 @@ color: #FFBC10;
 
     .navlinks .nav-items {
         flex-wrap: wrap;
+        margin: 0;
     }
 
     .navlinks .nav-items .nav-item {
         margin: 1px 0;
+        font-size: 15px;
     }
+
+
 } 
 
 
