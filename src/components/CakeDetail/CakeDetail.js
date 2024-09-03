@@ -113,6 +113,7 @@ function CakeDetail() {
                 href={`/assets/images/${cake.url_image}.png`}
                 download={cake.name}
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <FileDownloadIcon className="doawload-image cancel-item" />
               </a>
