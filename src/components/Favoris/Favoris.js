@@ -17,12 +17,22 @@ function Favoris() {
     }
   }, []);
 
+
+  const removeFavorite = (id) => {
+    const updatedFavorites = favorites.filter((item) => item.id !== id);
+    setFavorites(updatedFavorites);
+    localStorage.setItem("favorites", JSON.stringify(updatedFavorites));
+  };
+
+
   if (favorites.length === 0) {
-    return (
+    return (<>
+      <Header/>
       <div className="empty_favorites">
         <h2>Vous n'avez pas encore de favoris.</h2>
-        <Link to="/">Retour à l'accueil</Link>
+       
       </div>
+      <Footer/></>
     );
   }
 
@@ -35,7 +45,7 @@ function Favoris() {
           {favorites.map((item) => (
             <div className="catalogue_item" key={item.id}>
               <div className="cake_detail">
-                <div className="icon_favori">
+                <div className="icon_favori"  onClick={() => removeFavorite(item.id)}>
                   <img src={heart_fill} alt="Favori" />
                 </div>
                 <Link to={`/cake/${item.id}`}>
@@ -46,7 +56,7 @@ function Favoris() {
                     />
                   </div>
                   <h2 className="cake_name">{item.name}</h2>
-                  <p className="cake_price">{item.price} fcfa</p>
+                  <p className="cake_price">{item.price} Fcfa</p>
                 </Link>
               </div>
             </div>

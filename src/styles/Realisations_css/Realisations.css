@@ -6,7 +6,7 @@
     width: 759px;
     height: 144px;
     margin: 70px auto 50px;
-    border-radius: 15px;
+    border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -132,7 +132,7 @@
         width: 352px;
         height: 90px;
         margin: 70px auto 50px;
-        border-radius: 15px;
+        border-radius: 10px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -191,7 +191,7 @@
         width: 352px;
         height: 90px;
         margin: 70px auto 50px;
-        border-radius: 15px;
+        border-radius: 10px;
         display: flex;
         justify-content: center;
         align-items: center;

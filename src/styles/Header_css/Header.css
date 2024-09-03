@@ -36,7 +36,7 @@
 
     .nav-icons {
         display: flex;
-        z-index: 2000;
+        z-index: 3;
         position: absolute;
         left: 90%;
         top: 38%;

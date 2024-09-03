@@ -114,7 +114,7 @@ function Catalogues() {
                     />
                   </div>
                   <h2 className="cake_name">{item.name}</h2>
-                  <p className="cake_price">{item.price} fcfa</p>
+                  <p className="cake_price">{item.price} Fcfa</p>
                 </Link>
               </div>
             </div>

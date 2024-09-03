@@ -28,7 +28,7 @@
 .contact-telephone , .contact-email ,.contact-map{
     /* border: 2px solid purple; */
     margin: 50px auto;
-    width: 60%;
+    width: 40%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -38,7 +38,7 @@
     /* border: 2px solid green; */
     margin-left: 10px;
     font-weight: bold;
-    width: 36%;
+    width: 50%;
     color: black;
 }
 
@@ -51,7 +51,7 @@
 .paiement{
     /* border: 2px solid purple; */
     display: flex;
-    width: 60%;
+    width: 40%;
     justify-content: space-between;
     align-items: center;
     text-align: center;
@@ -83,6 +83,8 @@
         height: 49px;
         font-size: 100%;
         padding: 5px;
+        margin: 0 auto -36px;
+        display: flex;
   }
 
 
@@ -100,7 +102,9 @@
 
 .paiement{
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    width: 57%;
+    /* flex-direction: column; */
     height: 260px;
 }
 

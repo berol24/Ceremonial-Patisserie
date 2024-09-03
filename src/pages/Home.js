@@ -13,11 +13,11 @@ function Home() {
       <div className="accueil">
         <div className="bloc_left">
           <div className="message_accueil item1">
-            <p>Bienvenue sur le Site de Patisserie Ceremonial</p>
+            <p>Bienvenue sur le Site de pâtisserie Ceremonial</p>
           </div>
           <div className="message_accueil item2">
             <p>
-              Notre mission est de vous faire sourire avec nos Pâtisseries. Un plaisir
+              Notre mission est de vous faire sourire avec nos pâtisseries. Un plaisir
               sucré à chaque bouchée, notre pâtisserie est une symphonie de
               saveurs.
             </p>

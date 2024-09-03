@@ -2,13 +2,12 @@
     /* border: 2px solid red; */
     display: flex;
     flex-wrap: wrap;
-    margin-top: 100px;
     justify-content: center;
 }
 
 .cake_detail {
     /* border: 2px solid #FFBC10; */
-    border-radius: 5px;
+    border-radius: 10px;
     width: 340px;
     height: 380px;
     display: flex;
