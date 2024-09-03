@@ -1,7 +1,6 @@
-// src/routes/Routes.js
-import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
+import React from "react";
+import { Route, Routes } from "react-router-dom";
 import Home from "../pages/Home";
 import Slogan from "../components/Slogan";
 import Register from "../components/Register/Register";
@@ -18,26 +17,24 @@ import MyFormular from "../components/MyFormular";
 import MentionsLegales from "../components/mentionsLegales/MentionsLegales";
 
 const MyRoutes = () => (
-  <Router>
-     
+
     <Routes>
-      <Route exact path="/" element={<Home />}/>
-        <Route path="slogan" element={<Slogan />} />
-        <Route path="update" element={<Update />} />
-        <Route path="catalogues" element={<Catalogues />} />
-        <Route path="realisations" element={<Realisations />} />
-        <Route path="apropos" element={<Apropos />} />
-        <Route path="contacts" element={<Contacts />} />
-        <Route path="favoris" element={<Favoris />} />
-        <Route path="register" element={<Register />} />
-        <Route path="login" element={<Login />} />
-        <Route path="/cake/:id" element={<CakeDetail />} />
-        <Route path="videopresentation" element={<VideoPresentation />} />
-        <Route path="myFormular" element={<MyFormular />} />
-        <Route path="mentions-legales" element={<MentionsLegales />} />
+      <Route exact path="/" element={<Home />} />
+      <Route path="slogan" element={<Slogan />} />
+      <Route path="update" element={<Update />} />
+      <Route path="catalogues" element={<Catalogues />} />
+      <Route path="realisations" element={<Realisations />} />
+      <Route path="apropos" element={<Apropos />} />
+      <Route path="contacts" element={<Contacts />} />
+      <Route path="favoris" element={<Favoris />} />
+      <Route path="register" element={<Register />} />
+      <Route path="login" element={<Login />} />
+      <Route path="/cake/:id" element={<CakeDetail />} />
+      <Route path="videopresentation" element={<VideoPresentation />} />
+      <Route path="myFormular" element={<MyFormular />} />
+      <Route path="mentions-legales" element={<MentionsLegales />} />
     </Routes>
-    
-  </Router>
+
 );
 
 export default MyRoutes;
