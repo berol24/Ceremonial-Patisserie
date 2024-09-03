@@ -140,15 +140,21 @@ font-weight: bold;
 }
 
 
-
 .right_detail_commande .cancel {
-  /* border: 2px solid; */
-  width: 3%;
-  float: right;
-  margin: 85px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 70px auto;
+  width: 100%;
+ 
 }
 
 
+
+.right_detail_commande .cancel .cancel-item{
+  font-size: 30px;
+  color: #D93232;
+}
 
 
 
@@ -305,6 +311,13 @@ font-weight: bold;
     width: 100%;
     margin: 14px;
   }
+
+
+  .right_detail_commande .cancel {
+    margin: 45px auto;
+  }
+
+
 
 /*
   .left_detail_commande {

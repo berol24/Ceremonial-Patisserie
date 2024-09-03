@@ -1,13 +1,12 @@
-
 import React, { useEffect, useState } from "react";
-import { useParams ,useNavigate} from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import "../../styles/CakeDetail_css/CakeDetail.css";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import SloganText from "../SloganText";
 import MyFormular from "../MyFormular";
-import icone_delete from "../../assets/images/delete.svg";
-
+import FileDownloadIcon from "@mui/icons-material/FileDownload";
+import DeleteIcon from "@mui/icons-material/Delete";
 function CakeDetail() {
   const { id } = useParams();
   const [cake, setCake] = useState(null);
@@ -17,10 +16,8 @@ function CakeDetail() {
   const navigate = useNavigate();
 
   const handleCommandeClick = () => {
-    navigate(-1);  // -1 permet de revenir à la page précédente
+    navigate(-1); // -1 permet de revenir à la page précédente
   };
-
-
 
   useEffect(() => {
     fetch("/catalogue.json")
@@ -51,12 +48,10 @@ function CakeDetail() {
     setShowFormular(false); // Ferme le formulaire en pop-up
   };
 
-
-
   return (
     <div>
       <Header />
-    
+
       <h1 className="title_detail_commande">Détails de ma commande</h1>
       <div className="detail_commande" key={cake.id}>
         <div className="left_detail_commande">
@@ -72,13 +67,23 @@ function CakeDetail() {
             <p>{cake.description} </p>
           </div>
 
-          <div  className="btn_add_remove">
+          <div className="btn_add_remove">
             <section className="btn_qty">
-              <div className="btn_add_remove_item" onClick={decrementQuantity} style={{ cursor: "pointer" }}>
+              <div
+                className="btn_add_remove_item"
+                onClick={decrementQuantity}
+                style={{ cursor: "pointer" }}
+              >
                 -
               </div>
-              <span className="qte_cake">{quantity.toString().padStart(2, "0")}</span>
-              <div className="btn_add_remove_item" onClick={incrementQuantity} style={{ cursor: "pointer" }}>
+              <span className="qte_cake">
+                {quantity.toString().padStart(2, "0")}
+              </span>
+              <div
+                className="btn_add_remove_item"
+                onClick={incrementQuantity}
+                style={{ cursor: "pointer" }}
+              >
                 +
               </div>
             </section>
@@ -87,16 +92,34 @@ function CakeDetail() {
             </section>
           </div>
 
-          <div className="commande" >
-          {quantity.toString().padStart(2, "0") === "00" ?(
-    ""
-  ): (
-    <button type="button" onClick={handleCommanderClick}>Commander</button>
-  )  }
+          <div className="commande">
+            {quantity.toString().padStart(2, "0") === "00" ? (
+              ""
+            ) : (
+              <button type="button" onClick={handleCommanderClick}>
+                Commander
+              </button>
+            )}
           </div>
 
-          <div className="cancel"  onClick={handleCommandeClick}>
-            <span style={{ cursor: "pointer" }}><img src={icone_delete} alt="delete" /> </span>
+          <div className="cancel">
+            <span style={{ cursor: "pointer" }}>
+              {/* <a
+                href="https://ceremonial-patisserie.netlify.app/logo_ceremonial.png"
+                download
+                target="_blank"
+              > */}
+              <a
+                href={`/assets/images/${cake.url_image}.png`}
+                download={cake.name}
+                target="_blank"
+              >
+                <FileDownloadIcon className="doawload-image cancel-item" />
+              </a>
+            </span>
+            <span onClick={handleCommandeClick} style={{ cursor: "pointer" }}>
+              <DeleteIcon className="delete-commande cancel-item" />
+            </span>
           </div>
         </div>
       </div>
@@ -107,10 +130,17 @@ function CakeDetail() {
       {showFormular && (
         <div className="popup">
           <div className="popup-content">
-            <section><span className="close" onClick={closeFormular}>
-              &times;
-            </span></section>
-            <MyFormular cake_name={cake.name} cake_quantite ={quantity.toString().padStart(2, "0")} cake_prix_unitaire={cake.price} cake_prix_total={totalPrice}   />
+            <section>
+              <span className="close" onClick={closeFormular}>
+                &times;
+              </span>
+            </section>
+            <MyFormular
+              cake_name={cake.name}
+              cake_quantite={quantity.toString().padStart(2, "0")}
+              cake_prix_unitaire={cake.price}
+              cake_prix_total={totalPrice}
+            />
           </div>
         </div>
       )}
