@@ -5,22 +5,31 @@ import Routes from "./routes/MyRoutes";
 import { useEffect, useState } from "react";
 
 
+
 function App() {
-  const [showWelcome, setShowWelcome] = useState(true);
+  const [showSlogan, setShowSlogan] = useState(true);
   const navigate = useNavigate();
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowWelcome(false);
-      navigate("/"); 
-    }, 3000); 
+    if (!showSlogan) return;
 
-    return () => clearTimeout(timer);
-  }, [navigate]);
+    console.log("Timer started");
+
+    const timer = setTimeout(() => {
+      console.log("Redirecting to /home");
+      setShowSlogan(false);
+      navigate("/"); // Redirection vers la page d'accueil
+    }, 3000);
+
+    return () => {
+      console.log("Timer cleared");
+      clearTimeout(timer);
+    };
+  }, [showSlogan, navigate]);
 
   return (
     <div className="App">
-        {showWelcome ?  <Slogan/> : <Routes />} 
+        {showSlogan ?  <Slogan/> : <Routes />} 
   
     </div>
   );
