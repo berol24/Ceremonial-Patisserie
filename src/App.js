@@ -29,8 +29,8 @@ function App() {
 
   return (
     <div className="App">
-         {showSlogan ?  <WelcomePage/> : <Routes />}  
- 
+          {showSlogan ?  <WelcomePage/> : <Routes />} 
+      
     </div>
   );
 }
