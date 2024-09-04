@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from "react";
 import "../styles/MyFormular.css";
-import image_MTN from "../assets/images/image_MTN.png";
+import image_MTN from "../assets/images/image_MTN.jpg";
 import image_orange from "../assets/images/image_orange.png";
 import image_espece from "../assets/images/image_especes.png";
 

@@ -61,6 +61,7 @@
 .paiement .mtn div img , .paiement .orange div img{
     width: 100px;
     margin-bottom: 25px;
+    height: 100px;
 }
 
 .paiement .mtn span , .paiement .orange span{

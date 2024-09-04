@@ -6,8 +6,7 @@ import "../../styles/Contacts_css/Contacts.css";
 import mail from "../../assets/icons/mail.png";
 import map from "../../assets/icons/map.png";
 import telephone from "../../assets/icons/telephone.png";
-
-import image_MTN from "../../assets/images/image_MTN.png";
+import image_MTN from "../../assets/images/image_MTN.jpg";
 import image_orange from "../../assets/images/image_orange.png";
 
 function Contacts() {

@@ -1,5 +1,5 @@
 .copyright{
-    border: 1px solid red;
+    
     background-color:  #FFBC10;
     height: 200px;
     display: flex;
@@ -10,7 +10,7 @@
 
 .copyright p{
     width: 90%;
-    /* border: 1px solid red; */
+ 
 }
 
 .copyright p span{
