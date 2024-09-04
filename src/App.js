@@ -1,6 +1,5 @@
 import { useNavigate } from "react-router-dom";
 import "./App.css";
-import Slogan from "./components/Slogan";
 import Routes from "./routes/MyRoutes";
 import { useEffect, useState } from "react";
 import WelcomePage from "./components/WelcomePage";
