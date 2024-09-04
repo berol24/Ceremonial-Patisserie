@@ -15,6 +15,7 @@ import CakeDetail from "../components/CakeDetail/CakeDetail";
 import VideoPresentation from "../components/VideoPresentation/VideoPresentation";
 import MyFormular from "../components/MyFormular";
 import MentionsLegales from "../components/mentionsLegales/MentionsLegales";
+import WelcomePage from "../components/WelcomePage";
 
 const MyRoutes = () => (
 
@@ -33,6 +34,7 @@ const MyRoutes = () => (
       <Route path="videopresentation" element={<VideoPresentation />} />
       <Route path="myFormular" element={<MyFormular />} />
       <Route path="mentions-legales" element={<MentionsLegales />} />
+      <Route path="welcome" element={<WelcomePage />} />
     </Routes>
 
 );

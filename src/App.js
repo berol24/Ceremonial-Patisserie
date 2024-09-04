@@ -3,6 +3,7 @@ import "./App.css";
 import Slogan from "./components/Slogan";
 import Routes from "./routes/MyRoutes";
 import { useEffect, useState } from "react";
+import WelcomePage from "./components/WelcomePage";
 
 
 
@@ -18,8 +19,8 @@ function App() {
     const timer = setTimeout(() => {
       console.log("Redirecting to /home");
       setShowSlogan(false);
-      navigate("/"); // Redirection vers la page d'accueil
-    }, 3000);
+      navigate("/"); 
+    }, 4000);
 
     return () => {
       console.log("Timer cleared");
@@ -29,8 +30,8 @@ function App() {
 
   return (
     <div className="App">
-        {showSlogan ?  <Slogan/> : <Routes />} 
-  
+         {showSlogan ?  <WelcomePage/> : <Routes />}  
+ 
     </div>
   );
 }
