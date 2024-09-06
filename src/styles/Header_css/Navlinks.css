@@ -5,8 +5,7 @@
     width: 920px;
 }
 
-.navlinks .nav-items{
-    
+.navlinks .nav-items{ 
     display: flex;
     max-width: 100%;
 }
@@ -17,10 +16,15 @@
     margin: 0 20px;
 }
 
+
+
 .navlinks .nav-items .nav-item a{
 text-decoration: none;
 color: #FFBC10;
+
 }
+
+
 
 .navlinks .nav-items .nav-item a:hover{
     padding-bottom: 10px;
@@ -56,6 +60,53 @@ color: #FFBC10;
         font-size: 15px;
     }
 
+
+    
+
+    .navlinks .nav-items .nav-item a:nth-child(1) {
+        animation: moveLink ease-in;
+        animation-duration: 0.5s;
+        animation-delay: 0s;
+    }
+    
+    .navlinks .nav-items .nav-item a:nth-child(2) {
+        animation: moveLink ease-in;
+        animation-duration: 0.5s;
+        animation-delay: 2s;
+    }
+    
+    .navlinks .nav-items .nav-item a:nth-child(3) {
+        animation: moveLink ease-in;
+        animation-duration: 0.5s;
+        animation-delay: 5s; 
+    }
+    
+    .navlinks .nav-items .nav-item a:nth-child(4) {
+        animation: moveLink ease-in;
+        animation-duration: 0.5s;
+        animation-delay: 8s; 
+    }
+    
+    .navlinks .nav-items .nav-item a:nth-child(5) {
+        animation: moveLink ease-in;
+        animation-duration: 0.5s;
+        animation-delay: 11s;
+    }
+    
+    .navlinks .nav-items .nav-item a:nth-child(6) {
+        animation: moveLink ease-in;
+        animation-duration: 0.5s;
+        animation-delay: 13s; 
+    }
+    
+    @keyframes moveLink {
+        0%   { opacity: 0; }
+        /* 25%  { opacity: 0.25; }
+        50%  { opacity: 0.5; }
+        75%  { opacity: 0.75; } */
+        100% { opacity: 1; }
+    }
+    
 
 } 
 

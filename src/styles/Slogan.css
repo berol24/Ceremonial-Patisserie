@@ -78,8 +78,9 @@
 
 .slogan_logo {
   width: 360px;
-  height: 285px;
   margin: auto;
+  height: 100%;
+  overflow-y: hidden;
 }
 
 .slogan_logo img {

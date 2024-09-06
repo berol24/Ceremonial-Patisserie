@@ -55,6 +55,7 @@
         border-bottom: 1px  solid #FFBC10;
         padding: 10px;
         box-sizing: border-box;
+     
     }
 
   .nav-icons .icon.closeIcon{
@@ -74,7 +75,17 @@
         position: absolute;
         top: 30%;
         width: 53%;
+        animation: mymove 0.5s ease-in;
     }
+
+
+
+    @keyframes mymove {
+        from { left: 70%;}
+        to { left: 47%;}
+      }
+
+
 
     .nav-links .icon {
         display: block;

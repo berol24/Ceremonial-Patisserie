@@ -29,8 +29,8 @@ function Data() {
     const isFavorite = favorites.some((fav) => fav.id === item.id);
 
     const updatedFavorites = isFavorite
-      ? favorites.filter((fav) => fav.id !== item.id) // retirer des favoris
-      : [...favorites, item]; // ajouter aux favoris
+      ? favorites.filter((fav) => fav.id !== item.id) 
+      : [...favorites, item]; 
 
     setFavorites(updatedFavorites);
     localStorage.setItem("favorites", JSON.stringify(updatedFavorites));

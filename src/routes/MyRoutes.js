@@ -35,6 +35,7 @@ const MyRoutes = () => (
       <Route path="myFormular" element={<MyFormular />} />
       <Route path="mentions-legales" element={<MentionsLegales />} />
       <Route path="welcome" element={<WelcomePage />} />
+      
     </Routes>
 
 );
