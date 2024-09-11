@@ -26,10 +26,12 @@ function Catalogues() {
   const handleSubmit = (event) => {
     event.preventDefault();
 
+ 
     const isNumeric = (str) => {
       return /^\d+$/.test(str);
     };
 
+  
     const filter = data.filter((item) => {
       if (isNumeric(name)) {
         return item.price.toString().includes(name);
@@ -41,6 +43,13 @@ function Catalogues() {
     setFilteredData(filter);
     console.log(`The name you entered was: ${name}`);
   };
+
+  const handleKeyDown = (event) => {
+    if (event.key === "Enter") {
+      handleSubmit(event); // Lancer la recherche lorsque Enter est pressé
+    }
+  };
+
 
   useEffect(() => {
     fetch("/catalogue.json")
@@ -83,7 +92,9 @@ function Catalogues() {
             type="text"
             className="input_search"
             value={name}
-            onChange={(e) => setName(e.target.value)}
+            onChange={(e) => setName(e.target.value)} 
+            onKeyDown={handleKeyDown} 
+          
           />
           <button type="submit">
             <img src={icon_search} alt="icon_search" />
