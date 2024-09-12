@@ -1,0 +1,67 @@
+/* 
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      } */
+      
+      /* body {
+        font-family: 'Quicksand', sans-serif;
+        background-color: #fff7e6;
+        color: #D93232;
+     
+        height: 100vh;
+      
+      } */
+      
+      .container_found {  
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 20px; 
+         flex-direction: column;
+      }
+      
+      .logo {
+        width: 200px;
+        margin-bottom: 20px;
+      }
+      
+      .title_found {
+        font-size: 2.5rem;
+        color: #D93232;
+      } 
+      
+      .cake-image {
+        margin: 20px auto;
+      }
+      
+      .cake-image img {
+        width: 300px;
+        height: auto;
+      }
+      
+     .para_found{
+        font-size: 1.2rem;
+        margin-top: 20px;
+        color: #D93232;
+      } 
+      
+      .btn_found {
+        display: inline-block;
+        margin-top: 30px;
+        padding: 15px 30px;
+        background-color: #D93232;
+        color: white;
+        border-radius: 50px;
+        text-decoration: none;
+        font-size: 1rem;
+        transition: background-color 0.3s;
+      }
+      
+      .btn_found:hover {
+        background-color: #FFBC10;
+        color: #D93232;
+      }
+      

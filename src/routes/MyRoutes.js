@@ -16,11 +16,13 @@ import VideoPresentation from "../components/VideoPresentation/VideoPresentation
 import MyFormular from "../components/MyFormular";
 import MentionsLegales from "../components/mentionsLegales/MentionsLegales";
 import WelcomePage from "../components/WelcomePage";
+import PageNotFound from "../components/PageNotFound/PageNotFound";
 
 const MyRoutes = () => (
 
     <Routes>
       <Route exact path="/" element={<Home />} />
+    
       <Route path="slogan" element={<Slogan />} />
       <Route path="update" element={<Update />} />
       <Route path="catalogues" element={<Catalogues />} />
@@ -34,8 +36,8 @@ const MyRoutes = () => (
       <Route path="videopresentation" element={<VideoPresentation />} />
       <Route path="myFormular" element={<MyFormular />} />
       <Route path="mentions-legales" element={<MentionsLegales />} />
-      <Route path="welcome" element={<WelcomePage />} />
-      
+      <Route path="welcome" element={<WelcomePage />} /> 
+      <Route path="*" element={<PageNotFound />} />
     </Routes>
 
 );
