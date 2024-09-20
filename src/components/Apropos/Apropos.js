@@ -9,10 +9,10 @@ function Apropos() {
       <Header />
       <section id="about">
         <div>
-          <h2>CEREMONIAL-PATISSERIE</h2>
+          <h2>Qui sommes nous ?</h2>
           <p>
            
-              L'histoire de <strong>CEREMONIAL-PATISSERIE </strong> est née d'une passion profonde
+              L'histoire de <strong>CEREMONIAL PÂTISSERIE </strong> est née d'une passion profonde
               pour l'art de la pâtisserie et d'une vision de créer des moments
               inoubliables à travers des créations sucrées.
         
@@ -28,10 +28,10 @@ function Apropos() {
             qu'elle réalisait était une ode à la passion et à la précision.
           </p>
           <p>
-            C'est ainsi qu'est née l'idée de <strong>CEREMONIAL-PATISSERIE </strong>, un lieu où
+            C'est ainsi qu'est née l'idée de <strong>CEREMONIAL PÂTISSERIE </strong>, un lieu où
             la pâtisserie est élevée au rang de cérémonie, où chaque dessert
             raconte une histoire et où chaque bouchée est une expérience
-            sensorielle. Chez <strong>CEREMONIAL-PATISSERIE </strong>, nous croyons que les
+            sensorielle. Chez <strong>CEREMONIAL PÂTISSERIE </strong>, nous croyons que les
             moments spéciaux méritent des créations qui sont tout aussi
             spéciales. Que ce soit pour un mariage, un anniversaire, ou
             simplement pour célébrer la beauté de la vie quotidienne, nous nous
@@ -47,7 +47,7 @@ function Apropos() {
             offrir une expérience culinaire inoubliable.
           </p>
           <p>
-            Chez <strong>CEREMONIAL-PATISSERIE </strong>, chaque pâtisserie est conçue pour être
+            Chez <strong>CEREMONIAL PÂTISSERIE </strong>, chaque pâtisserie est conçue pour être
             le point culminant de vos célébrations, une pièce maîtresse qui
             éblouira vos invités et créera des souvenirs durables. Nous sommes
             honorés de faire partie de vos moments les plus précieux et nous
@@ -56,7 +56,7 @@ function Apropos() {
           </p>
           <p>
             <strong>
-              Bienvenue dans l'univers de <strong>CEREMONIAL-PATISSERIE </strong>, où chaque
+              Bienvenue dans l'univers de <strong>CEREMONIAL PÂTISSERIE </strong>, où chaque
               dessert est une cérémonie en soi.
             </strong>
           </p>

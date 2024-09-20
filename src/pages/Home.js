@@ -13,7 +13,7 @@ function Home() {
       <div className="accueil">
         <div className="bloc_left">
           <div className="message_accueil item1">
-            <p>Bienvenue sur le Site de pâtisserie Ceremonial</p>
+            <p>Bienvenue chez Cérémonial pâtisserie </p>
           </div>
           <div className="message_accueil item2">
             <p>
