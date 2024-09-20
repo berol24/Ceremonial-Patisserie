@@ -82,7 +82,7 @@ function Catalogues() {
       <Header />
       <div className="catalogue_title">
         <h3>MON CATALOGUE </h3>
-        <button style={{ background: "none", border: "none" }}>
+        <button style={{ background: "none", border: "none" ,display: "none" }}>
           <img src={icon_filter} alt="icon_filter" />
         </button>
       </div>

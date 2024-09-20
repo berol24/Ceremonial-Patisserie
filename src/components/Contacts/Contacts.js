@@ -18,7 +18,7 @@ function Contacts() {
           <div className="contactez-nous">
             <h1 className="contact-title">Contactez-nous</h1>
            <a
-              href="tel:+33610810730"
+              href="tel:+237655810768"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -26,17 +26,17 @@ function Contacts() {
                 <div>
                   <img src={telephone} alt="icone-telephone" />
                 </div>
-                <span>0123456789</span>
+                <span>+237 655810768</span>
               </div>
             </a>
 
-            <a href="mailto:berolbertindjomo@gmail.com"  target="_blank"
+            <a href="mailto:camelleflavie00@gmail.com"  target="_blank"
               rel="noopener noreferrer">  <div className="contact-email">
               <div>
                 {" "}
                 <img src={mail} alt="icone-mail" />{" "}
               </div>
-              <span>contact@ceremonial.com</span>
+              <span>camelleflavie00@gmail.com</span>
             </div>
             </a>
             <a href="https://maps.app.goo.gl/B88iqvLuZf9uHccM7"  target="_blank"
@@ -55,13 +55,13 @@ function Contacts() {
                 <div>
                   <img src={image_MTN} alt="icone-telephone" />
                 </div>
-                <span>67523456789</span>
+                <span>672438212</span>
               </div>
               <div className="orange">
                 <div>
                   <img src={image_orange} alt="icone-telephone" />
                 </div>
-                <span>6563456789</span>
+                <span>655810768</span>
               </div>
             </div>
           </div>

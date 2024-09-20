@@ -15,7 +15,7 @@ function Contact() {
           <img src={logo_ceremonial} alt="logo_ceremonial" />
         </div>
         <div className="mail">
-          <span>giresdjomo@yahoo.fr</span>
+          <span>camelleflavie00@gmail.com</span>
         </div>
         <div className="number">
           <span>+237 655810768</span>
@@ -29,17 +29,17 @@ function Contact() {
         </div>
         <div>
           <a href="https://www.facebook.com/profile.php?id=100076282001637" target="_blank"  rel="noopener noreferrer">
-            <img src={icon_facebook} alt="logo_facebook" />
+            <img src={icon_facebook} alt="logo_facebook" /> 
           </a>
         </div>
         <div>
           <a href="https://www.instagram.com/ceremonialpatisserie?igsh=MWltcG02dGwwZjd3OQ==" target="_blank" rel="noopener noreferrer">
-            <img src={icon_instagram} alt="logo_instagram" />
+            <img src={icon_instagram} alt="logo_instagram" /> 
           </a>
         </div>
         <div>
           <a href="https://www.youtube.com/@ceremonialpatisserie" target="_blank" rel="noopener noreferrer">
-            <img src={icon_youtube} alt="logo_youtube" />
+            <img src={icon_youtube} alt="logo_youtube" /> 
           </a>
         </div>
 
