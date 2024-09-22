@@ -54,7 +54,7 @@ Cordialement,
   useEffect(() => {
     const updateLink = () => {
       if (window.innerWidth <= 768) {
-        setLink("https://wa.me/23756265982?text=" + message);
+        setLink("https://wa.me/237655810768?text=" + message);
       } else {
         setLink("https://api.whatsapp.com/send?text=" + message);
       }
