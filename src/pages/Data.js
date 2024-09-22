@@ -4,11 +4,11 @@ import { Link } from "react-router-dom";
 import SloganText from "../components/SloganText";
 import heart_bold from "../assets/images/heart-bold.svg";
 import heart_fill from "../assets/images/heart-fill.svg";
+
 function Data() {
   const [data, setData] = useState(null);
 
   const [favorites, setFavorites] = useState(() => {
-    // Récupérer les favoris depuis le localStorage si disponible
     const savedFavorites = localStorage.getItem("favorites");
     return savedFavorites ? JSON.parse(savedFavorites) : [];
   });
@@ -17,7 +17,6 @@ function Data() {
     fetch("/catalogue.json")
       .then((res) => res.json())
       .then((data) => {
-        // console.log(data);
         setData(data);
       })
       .catch((error) => {
@@ -27,47 +26,54 @@ function Data() {
 
   const toggleFavorite = (item) => {
     const isFavorite = favorites.some((fav) => fav.id === item.id);
-
     const updatedFavorites = isFavorite
-      ? favorites.filter((fav) => fav.id !== item.id) 
-      : [...favorites, item]; 
+      ? favorites.filter((fav) => fav.id !== item.id)
+      : [...favorites, item];
 
     setFavorites(updatedFavorites);
     localStorage.setItem("favorites", JSON.stringify(updatedFavorites));
   };
 
+  // Fonction pour mélanger un tableau
+  const shuffleArray = (array) => {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]]; // Échange
+    }
+    return array;
+  };
+
   return (
     <>
       <div className="catalogue_accueil">
-        {data &&
-          data.slice(0, 6).map((item) => {
-            const isFavorite = favorites.some((fav) => fav.id === item.id);
-            return (
-              <div className="catalogue_item" key={item.id}>
-                <div className="cake_detail">
-                  <div
-                    className="icon_favori"
-                    onClick={() => toggleFavorite(item)}
-                  >
+        {data && shuffleArray(data).slice(0, 6).map((item) => {
+          const isFavorite = favorites.some((fav) => fav.id === item.id);
+          return (
+            <div className="catalogue_item" key={item.id}>
+              <div className="cake_detail">
+                <div
+                  className="icon_favori"
+                  onClick={() => toggleFavorite(item)}
+                >
+                  <img
+                    src={isFavorite ? heart_fill : heart_bold}
+                    alt="btn_favori"
+                  />
+                </div>
+                <Link to={`/cake/${item.id}`}>
+                  <div className="image_item">
                     <img
-                      src={isFavorite ? heart_fill : heart_bold}
-                      alt="btn_favori"
+                      src={`/assets/images/${item.url_image}.png`}
+                      alt={item.name}
                     />
                   </div>
-                  <Link to={`/cake/${item.id}`}>
-                    <div className="image_item">
-                      <img
-                        src={`/assets/images/${item.url_image}.png`}
-                        alt={item.name}
-                      />
-                    </div>
-                    <h2 className="cake_name">{item.name}</h2>
-                    <p className="cake_price">{item.price} fcfa</p>
-                  </Link>
-                </div>
+                  <h2 className="cake_name">{item.name}</h2>
+                  <p className="cake_price">{item.price} fcfa</p>
+                </Link>
               </div>
-            );
-      })}
+            </div>
+          );
+        })}
 
         <div className="mes_catalogues">
           <Link to="/catalogues">Nos Catalogues</Link>

@@ -78,6 +78,17 @@ function Catalogues() {
   };
 
 
+  // Fonction pour mélanger un tableau
+  const shuffleArray = (array) => {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]]; // Échange
+    }
+    return array;
+  };
+
+
+
   return (
     <div>
       <Header />
@@ -104,7 +115,7 @@ function Catalogues() {
       </div>
       <div className="catalogue_accueil">
         {filteredData.length > 0 ? (
-          filteredData.map((item) => {
+         shuffleArray(filteredData).map((item) => {
             const isFavorite = favorites.some((fav) => fav.id === item.id);
             return (
             <div className="catalogue_item" key={item.id}>
