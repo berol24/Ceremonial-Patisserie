@@ -31,12 +31,13 @@ function Catalogues() {
       return /^\d+$/.test(str);
     };
 
-  
+   
     const filter = data.filter((item) => {
       if (isNumeric(name)) {
         return item.price.toString().includes(name);
       } else {
-        return item.name.toLowerCase().includes(name.toLowerCase());
+        return item.name.toLowerCase().includes(name.toLowerCase()) || 
+               item.form.toLowerCase().includes(name.toLowerCase());
       }
     });
 
@@ -123,6 +124,7 @@ function Catalogues() {
                       src={`/assets/images/${item.url_image}.png`}
                       alt={item.name}
                     />
+                    
                   </div>
                   <h2 className="cake_name">{item.name}</h2>
                   <p className="cake_price">{item.price} Fcfa</p>

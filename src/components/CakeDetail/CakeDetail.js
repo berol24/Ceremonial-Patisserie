@@ -110,7 +110,7 @@ function CakeDetail() {
                 target="_blank"
               > */}
               <a
-                href={`/assets/images/${cake.url_image}.png`}
+                href={`/assets/images/${cake.url_image}.jpg`}
                 download={cake.name}
                 target="_blank"
                 rel="noopener noreferrer"

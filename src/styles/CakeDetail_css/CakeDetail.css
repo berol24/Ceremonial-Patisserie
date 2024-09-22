@@ -274,6 +274,9 @@ font-weight: bold;
   margin-right: 2px;
 }
 
+.left_detail_commande img{
+  width: 100%;
+}
 
 .right_detail_commande {
   width: 85%;
