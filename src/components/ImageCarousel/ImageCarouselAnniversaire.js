@@ -5,14 +5,14 @@ import  "../../styles/ImageCarousel_css/ImageCarousel.css";
 
 const images = [];
 
-for (let i = 1; i <= 40; i++) {
+
+for (let i = 40; i >= 1; i--) {
     images.push(require(`../../assets/images/mariage${i}.png`));
 }
 
 
 
-
-const ImageCarousel = () => {
+const ImageCarouselAnniversaire = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const nextSlide = () => {
@@ -50,4 +50,4 @@ const ImageCarousel = () => {
     );
 };
 
-export default ImageCarousel;
+export default ImageCarouselAnniversaire;

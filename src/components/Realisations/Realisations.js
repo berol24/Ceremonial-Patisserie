@@ -8,7 +8,17 @@ import realisation3 from "../../assets/images/realisation3.png";
 import realisation4 from "../../assets/images/realisation4.png";
 import SloganText from "../../components/SloganText";
 import ImageCarousel from "../ImageCarousel/ImageCarousel";
+import ImageCarouselAnniversaire from "../ImageCarousel/ImageCarouselAnniversaire";
 function Realisations() {
+
+
+  const images = [];
+
+  for (let i = 1; i <= 40; i++) {
+      images.push(require(`../../assets/images/mariage${i}.png`));
+  }
+  
+
   return (
     <div>
       <Header />
@@ -83,7 +93,7 @@ function Realisations() {
       </div>
 
 
-      <ImageCarousel/>
+      <ImageCarouselAnniversaire />
       {/* //////////////////////// ceremonial en action*/}
       <div className="title_ceremonial_en_action">
         <h1>CEREMONIAL EN ACTION</h1>
