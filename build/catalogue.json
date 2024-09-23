@@ -1,0 +1,711 @@
+[
+  {
+    "id": 1,
+    "name": "Carré choco Royal",
+    "description": "Gâteau moelleux aux couches de génoise imbibées de sirop, avec une garniture de crème à la vanille.",
+    "price": 10000,
+    "url_image": "cake_square_1",
+    "form": "carre"
+  },
+  {
+    "id": 2,
+    "name": "Carré Douceur bleu",
+    "description": "Délicieux gâteau moelleux, crème vanille et génoise imbibée de sirop pour une douceur irrésistible.",
+    "price": 10000,
+    "url_image": "cake_square_2",
+    "form": "carre"
+  },
+  {
+    "id": 3,
+    "name": "Carré choco",
+    "description": "Gâteau moelleux classique, alliant génoise imbibée et crème à la vanille pour un plaisir inégalé.",
+    "price": 10000,
+    "url_image": "cake_square_3",
+    "form": "carre"
+  },
+  {
+    "id": 4,
+    "name": "Carré choco vanille",
+    "description": "Une fusion parfaite de chocolat et de vanille, dans un gâteau moelleux et réconfortant.",
+    "price": 10000,
+    "url_image": "cake_square_4",
+    "form": "carre"
+  },
+  {
+    "id": 5,
+    "name": "Carré full choco",
+    "description": "Pour les amateurs de chocolat, un gâteau riche avec une crème onctueuse et des couches de génoise.",
+    "price": 10000,
+    "url_image": "cake_square_5",
+    "form": "carre"
+  },
+  {
+    "id": 6,
+    "name": "Carré festif",
+    "description": "Un gâteau moelleux idéal pour toutes les occasions, garni de crème à la vanille.",
+    "price": 10000,
+    "url_image": "cake_square_6",
+    "form": "carre"
+  },
+  {
+    "id": 7,
+    "name": "Carré Chocolat-Vanille",
+    "description": "Douce harmonie entre le chocolat intense et la vanille crémeuse dans un gâteau moelleux.",
+    "price": 10000,
+    "url_image": "cake_square_7",
+    "form": "carre"
+  },
+  {
+    "id": 8,
+    "name": "Carré Gourmandise",
+    "description": "Un régal moelleux, parfait pour satisfaire toutes vos envies sucrées avec sa crème vanille.",
+    "price": 10000,
+    "url_image": "cake_square_8",
+    "form": "carre"
+  },
+  {
+    "id": 9,
+    "name": "Carré choco",
+    "description": "Une version délicieuse d’un classique, alliant la douceur de la génoise à la crème à la vanille.",
+    "price": 10000,
+    "url_image": "cake_square_9",
+    "form": "carre"
+  },
+  {
+    "id": 10,
+    "name": "Carré choco Doux",
+    "description": "Gâteau moelleux à la douceur irrésistible, avec génoise imbibée et crème à la vanille.",
+    "price": 10000,
+    "url_image": "cake_square_10",
+    "form": "carre"
+  },
+  {
+    "id": 11,
+    "name": "Carré full vanille",
+    "description": "Un gâteau pour les fans de vanille, moelleux et généreux en crème vanille.",
+    "price": 10000,
+    "url_image": "cake_square_11",
+    "form": "carre"
+  },
+  {
+    "id": 12,
+    "name": "Carré full vanille",
+    "description": "Gâteau moelleux, intensément vanillé, pour une expérience douce et délicate.",
+    "price": 10000,
+    "url_image": "cake_square_12",
+    "form": "carre"
+  },
+  {
+    "id": 13,
+    "name": "Carré vanille élégance",
+    "description": "Un gâteau raffiné, alliant moelleux et crème à la vanille pour un moment de pur délice.",
+    "price": 10000,
+    "url_image": "cake_square_13",
+    "form": "carre"
+  },
+  {
+    "id": 14,
+    "name": "Carré vanille semi-choco",
+    "description": "Douceur vanille et notes chocolatées se rencontrent dans ce gâteau moelleux.",
+    "price": 10000,
+    "url_image": "cake_square_14",
+    "form": "carre"
+  },
+  {
+    "id": 15,
+    "name": "Carré full choco",
+    "description": "Une explosion de chocolat dans un gâteau moelleux, idéal pour les amateurs de chocolat.",
+    "price": 10000,
+    "url_image": "cake_square_15",
+    "form": "carre"
+  },
+  {
+    "id": 16,
+    "name": "Carré de Luxe",
+    "description": "Gâteau moelleux haut de gamme, garni d'une crème à la vanille raffinée.",
+    "price": 10000,
+    "url_image": "cake_square_16",
+    "form": "carre"
+  },
+  {
+    "id": 17,
+    "name": "Carré blanc",
+    "description": "Un gâteau élégant et moelleux, idéal pour toutes les occasions, avec une garniture de crème à la vanille.",
+    "price": 10000,
+    "url_image": "cake_square_17",
+    "form": "carre"
+  },
+  {
+    "id": 18,
+    "name": "Carré vanille bleu",
+    "description": "Gâteau moelleux à la vanille, avec une touche de couleur pour une présentation attrayante.",
+    "price": 10000,
+    "url_image": "cake_square_18",
+    "form": "carre"
+  },
+  {
+    "id": 19,
+    "name": "Carré Paradis",
+    "description": "Une expérience gustative divine avec ce gâteau moelleux, imbibé et garni de crème.",
+    "price": 10000,
+    "url_image": "cake_square_19",
+    "form": "carre"
+  },
+  {
+    "id": 20,
+    "name": "Carré vanille choco",
+    "description": "L'alliance parfaite du chocolat et de la vanille dans un gâteau moelleux irrésistible.",
+    "price": 10000,
+    "url_image": "cake_square_20",
+    "form": "carre"
+  },
+  {
+    "id": 21,
+    "name": "Carré vanille choco",
+    "description": "Répétition d'un délice où le moelleux rencontre la crème à la vanille et au chocolat.",
+    "price": 10000,
+    "url_image": "cake_square_21",
+    "form": "carre"
+  },
+  {
+    "id": 22,
+    "name": "Carré Passion",
+    "description": "Un gâteau moelleux qui célèbre la vanille avec une crème délicate, pour un moment de passion.",
+    "price": 10000,
+    "url_image": "cake_square_22",
+    "form": "carre"
+  },
+  {
+    "id": 23,
+    "name": "Carré Vanille",
+    "description": "Gâteau moelleux classique, un hommage à la vanille, garni de crème onctueuse.",
+    "price": 10000,
+    "url_image": "cake_square_23",
+    "form": "carre"
+  },
+  {
+    "id": 24,
+    "name": "Carré vanille rosé",
+    "description": "Un gâteau moelleux délicatement coloré, alliant la douceur de la vanille à une présentation charmante.",
+    "price": 10000,
+    "url_image": "cake_square_24",
+    "form": "carre"
+  },
+  {
+    "id": 25,
+    "name": "Carré Évasion",
+    "description": "Un voyage gustatif dans un gâteau moelleux, imbibé de sirop et garni de crème à la vanille.",
+    "price": 10000,
+    "url_image": "cake_square_25",
+    "form": "carre"
+  },
+  {
+    "id": 26,
+    "name": "Coeur choco vanille",
+    "description": "Gâteau moelleux aux couches de génoise imbibées de sirop, avec une garniture de crème à la vanille.",
+    "price": 10000,
+    "url_image": "cake_heart_1",
+    "form": "coeur"
+  },
+  {
+    "id": 27,
+    "name": "Carré choco vanille",
+    "description": "Délicieux gâteau moelleux, crème vanille et génoise imbibée de sirop pour une douceur irrésistible.",
+    "price": 10000,
+    "url_image": "cake_heart_2",
+    "form": "coeur"
+  },
+  {
+    "id": 28,
+    "name": "Chocolat Amoureux",
+    "description": "Gâteau moelleux classique, alliant génoise imbibée et crème à la vanille pour un plaisir inégalé.",
+    "price": 10000,
+    "url_image": "cake_heart_3",
+    "form": "coeur"
+  },
+  {
+    "id": 29,
+    "name": "Nuage de Chocolat",
+    "description": "Une fusion parfaite de chocolat et de vanille, dans un gâteau moelleux et réconfortant.",
+    "price": 10000,
+    "url_image": "cake_heart_4",
+    "form": "coeur"
+  },
+  {
+    "id": 30,
+    "name": "Cœur de Chocolat",
+    "description": "Pour les amateurs de chocolat, un gâteau riche avec une crème onctueuse et des couches de génoise.",
+    "price": 10000,
+    "url_image": "cake_heart_5",
+    "form": "coeur"
+  },
+  {
+    "id": 31,
+    "name": "Carré festif",
+    "description": "Un gâteau moelleux idéal pour toutes les occasions, garni de crème à la vanille.",
+    "price": 10000,
+    "url_image": "cake_heart_6",
+    "form": "coeur"
+  },
+  {
+    "id": 32,
+    "name": "Cœur fondant au choco",
+    "description": "Douce harmonie entre le chocolat intense et la vanille crémeuse dans un gâteau moelleux.",
+    "price": 10000,
+    "url_image": "cake_heart_7",
+    "form": "coeur"
+  },
+  {
+    "id": 33,
+    "name": "Coeur gourmand",
+    "description": "Un régal moelleux, parfait pour satisfaire toutes vos envies sucrées avec sa crème vanille.",
+    "price": 10000,
+    "url_image": "cake_heart_8",
+    "form": "coeur"
+  },
+  {
+    "id": 34,
+    "name": "Coeur choco",
+    "description": "Une version délicieuse d’un classique, alliant la douceur de la génoise à la crème à la vanille.",
+    "price": 10000,
+    "url_image": "cake_heart_9",
+    "form": "coeur"
+  },
+  {
+    "id": 35,
+    "name": "Coeur choco",
+    "description": "Gâteau moelleux à la douceur irrésistible, avec génoise imbibée et crème à la vanille.",
+    "price": 10000,
+    "url_image": "cake_heart_10",
+    "form": "coeur"
+  },
+
+
+  
+  {
+    "id": 36,
+    "name": "Coeur choco",
+    "description": "Un gâteau pour les fans de vanille, moelleux et généreux en crème vanille.",
+    "price": 10000,
+    "url_image": "cake_heart_11",
+    "form": "coeur"
+  },
+  {
+    "id": 37,
+    "name": "Rosé choco Royal",
+    "description": "Gâteau moelleux aux couches de génoise imbibées de sirop, avec une garniture de crème à la vanille.",
+    "price": 10000,
+    "url_image": "cake_round_1",
+    "form": "rond"
+},
+{
+    "id": 38,
+    "name": "Douceur chocolat",
+    "description": "Délicieux gâteau moelleux, crème vanille et génoise imbibée de sirop pour une douceur irrésistible.",
+    "price": 10000,
+    "url_image": "cake_round_2",
+    "form": "rond"
+},
+{
+    "id": 39,
+    "name": "Rondeur choco vanille ",
+    "description": "Gâteau moelleux classique, alliant génoise imbibée et crème à la vanille pour un plaisir inégalé.",
+    "price": 10000,
+    "url_image": "cake_round_3",
+    "form": "rond"
+},
+{
+    "id": 40,
+    "name": "Rondeur choco",
+    "description": "Une fusion parfaite de chocolat et de vanille, dans un gâteau moelleux et réconfortant.",
+    "price": 10000,
+    "url_image": "cake_round_4",
+    "form": "rond"
+},
+{
+    "id": 41,
+    "name": "Rondeur choco vanille",
+    "description": "Pour les amateurs de chocolat, un gâteau riche avec une crème onctueuse et des couches de génoise.",
+    "price": 10000,
+    "url_image": "cake_round_5",
+    "form": "rond"
+},
+{
+    "id": 42,
+    "name": "Full choco",
+    "description": "Un gâteau moelleux idéal pour toutes les occasions, garni de crème à la vanille.",
+    "price": 10000,
+    "url_image": "cake_round_6",
+    "form": "rond"
+},
+{
+    "id": 43,
+    "name": "Nuage de Chocolat",
+    "description": "Douce harmonie entre le chocolat intense et la vanille crémeuse dans un gâteau moelleux.",
+    "price": 10000,
+    "url_image": "cake_round_7",
+    "form": "rond"
+},
+{
+    "id": 44,
+    "name": "Rosé choco Royal",
+    "description": "Un régal moelleux, parfait pour satisfaire toutes vos envies sucrées avec sa crème vanille.",
+    "price": 10000,
+    "url_image": "cake_round_8",
+    "form": "rond"
+},
+{
+    "id": 45,
+    "name": "Rondeur choco vanille",
+    "description": "Une version délicieuse d’un classique, alliant la douceur de la génoise à la crème à la vanille.",
+    "price": 10000,
+    "url_image": "cake_round_9",
+    "form": "rond"
+},
+{
+    "id": 46,
+    "name": "Rondeur Choco Caramel",
+    "description": "Gâteau moelleux à la douceur irrésistible, avec génoise imbibée et crème à la vanille.",
+    "price": 10000,
+    "url_image": "cake_round_10",
+    "form": "rond"
+},
+{
+    "id": 47,
+    "name": "Rondeur Choco Caramel",
+    "description": "Un gâteau pour les fans de vanille, moelleux et généreux en crème vanille.",
+    "price": 10000,
+    "url_image": "cake_round_11",
+    "form": "rond"
+},
+{
+    "id": 48,
+    "name": "Rondeur Choco Caramel",
+    "description": "Gâteau moelleux, intensément vanillé, pour une expérience douce et délicate.",
+    "price": 10000,
+    "url_image": "cake_round_12",
+    "form": "rond"
+},
+{
+    "id": 49,
+    "name": "Rondeur vanille élégance",
+    "description": "Un gâteau raffiné, alliant moelleux et crème à la vanille pour un moment de pur délice.",
+    "price": 10000,
+    "url_image": "cake_round_13",
+    "form": "rond"
+},
+{
+    "id": 50,
+    "name": "Rondeur Mentholée",
+    "description": "Douceur vanille et notes chocolatées se rencontrent dans ce gâteau moelleux.",
+    "price": 10000,
+    "url_image": "cake_round_14",
+    "form": "rond"
+},
+{
+    "id": 51,
+    "name": "Rondeur nuage choco",
+    "description": "Une explosion de chocolat dans un gâteau moelleux, idéal pour les amateurs de chocolat.",
+    "price": 10000,
+    "url_image": "cake_round_15",
+    "form": "rond"
+},
+{
+    "id": 52,
+    "name": "Rondeur nuage choco",
+    "description": "Gâteau moelleux haut de gamme, garni d'une crème à la vanille raffinée.",
+    "price": 10000,
+    "url_image": "cake_round_16",
+    "form": "rond"
+},
+{
+    "id": 53,
+    "name": "Rondeur vanille mentholée",
+    "description": "Un gâteau élégant et moelleux, idéal pour toutes les occasions, avec une garniture de crème à la vanille.",
+    "price": 10000,
+    "url_image": "cake_round_17",
+    "form": "rond"
+},
+{
+    "id": 54,
+    "name": "Vanille nuage choco",
+    "description": "Gâteau moelleux à la vanille, avec une touche de couleur pour une présentation attrayante.",
+    "price": 10000,
+    "url_image": "cake_round_18",
+    "form": "rond"
+},
+{
+    "id": 55,
+    "name": "Full choco",
+    "description": "Une expérience gustative divine avec ce gâteau moelleux, imbibé et garni de crème.",
+    "price": 10000,
+    "url_image": "cake_round_19",
+    "form": "rond"
+},
+{
+    "id": 56,
+    "name": "Full choco",
+    "description": "L'alliance parfaite du chocolat et de la vanille dans un gâteau moelleux irrésistible.",
+    "price": 10000,
+    "url_image": "cake_round_20",
+    "form": "rond"
+},
+{
+    "id": 57,
+    "name": "Rondeur vanille choco",
+    "description": "Répétition d'un délice où le moelleux rencontre la crème à la vanille et au chocolat.",
+    "price": 10000,
+    "url_image": "cake_round_21",
+    "form": "rond"
+},
+
+
+
+
+
+
+
+{
+  "id": 58,
+  "name": "Neige Royal",
+  "description": "Gâteau moelleux aux couches de génoise imbibées de sirop, avec une garniture de crème à la vanille.",
+  "price": 15000,
+  "url_image": "cake_GM_1",
+  "form": "rond"
+},
+{
+  "id": 59,
+  "name": "Tour gourmande",
+  "description": "Délicieux gâteau moelleux, crème vanille et génoise imbibée de sirop pour une douceur irrésistible.",
+  "price": 15000,
+  "url_image": "cake_GM_2",
+  "form": "rond"
+},
+{
+  "id": 60,
+  "name": "Tour fondante",
+  "description": "Gâteau moelleux classique, alliant génoise imbibée et crème à la vanille pour un plaisir inégalé.",
+  "price": 15000,
+  "url_image": "cake_GM_3",
+  "form": "rond"
+},
+{
+  "id": 61,
+  "name": "Full vanille",
+  "description": "Une fusion parfaite de chocolat et de vanille, dans un gâteau moelleux et réconfortant.",
+  "price": 15000,
+  "url_image": "cake_GM_4",
+  "form": "rond"
+},
+{
+  "id": 62,
+  "name": "Gratte-Ciel rosé",
+  "description": "Pour les amateurs de chocolat, un gâteau riche avec une crème onctueuse et des couches de génoise.",
+  "price": 15000,
+  "url_image": "cake_GM_5",
+  "form": "rond"
+},
+{
+  "id": 63,
+  "name": "Carré festif",
+  "description": "Un gâteau moelleux idéal pour toutes les occasions, garni de crème à la vanille.",
+  "price": 15000,
+  "url_image": "cake_GM_6",
+  "form": "carre"
+},
+{
+  "id": 64,
+  "name": "Cake miraculous",
+  "description": "Douce harmonie entre le chocolat intense et la vanille crémeuse dans un gâteau moelleux.",
+  "price": 15000,
+  "url_image": "cake_GM_7",
+  "form": "rond"
+},
+{
+  "id": 65,
+  "name": "Cake Blaze",
+  "description": "Un régal moelleux, parfait pour satisfaire toutes vos envies sucrées avec sa crème vanille.",
+  "price": 15000,
+  "url_image": "cake_GM_8",
+  "form": "rond"
+},
+{
+  "id": 66,
+  "name": "Violetta",
+  "description": "Une version délicieuse d’un classique, alliant la douceur de la génoise à la crème à la vanille.",
+  "price": 15000,
+  "url_image": "cake_GM_9",
+  "form": "rond"
+},
+{
+  "id": 67,
+  "name": "Cake Spiderman",
+  "description": "Gâteau moelleux à la douceur irrésistible, avec génoise imbibée et crème à la vanille.",
+  "price": 15000,
+  "url_image": "cake_GM_10",
+  "form": "rond"
+},
+{
+  "id": 68,
+  "name": "Rectangle Paradis",
+  "description": "Un gâteau pour les fans de vanille, moelleux et généreux en crème vanille.",
+  "price": 15000,
+  "url_image": "cake_GM_11",
+  "form": "rectangle"
+},
+{
+  "id": 69,
+  "name": "Rectangle choco vanille ",
+  "description": "Gâteau moelleux, intensément vanillé, pour une expérience douce et délicate.",
+  "price": 15000,
+  "url_image": "cake_GM_12",
+  "form": "rectangle"
+},
+{
+  "id": 70,
+  "name": "Rose barbie",
+  "description": "Un gâteau raffiné, alliant moelleux et crème à la vanille pour un moment de pur délice.",
+  "price": 15000,
+  "url_image": "cake_GM_13",
+  "form": "rond"
+},
+{
+  "id": 71,
+  "name": "Full choco",
+  "description": "Douceur vanille et notes chocolatées se rencontrent dans ce gâteau moelleux.",
+  "price": 15000,
+  "url_image": "cake_GM_14",
+  "form": "rond"
+},
+{
+  "id": 72,
+  "name": "Full choco",
+  "description": "Une explosion de chocolat dans un gâteau moelleux, idéal pour les amateurs de chocolat.",
+  "price": 15000,
+  "url_image": "cake_GM_15",
+  "form": "rond"
+},
+{
+  "id": 73,
+  "name": "Rondeur de Luxe",
+  "description": "Gâteau moelleux haut de gamme, garni d'une crème à la vanille raffinée.",
+  "price": 15000,
+  "url_image": "cake_GM_16",
+  "form": "rond"
+},
+{
+  "id": 74,
+  "name": "Mickey blue",
+  "description": "Un gâteau élégant et moelleux, idéal pour toutes les occasions, avec une garniture de crème à la vanille.",
+  "price": 15000,
+  "url_image": "cake_GM_17",
+  "form": "rond"
+},
+{
+  "id": 75,
+  "name": "Pat patrouille",
+  "description": "Gâteau moelleux à la vanille, avec une touche de couleur pour une présentation attrayante.",
+  "price": 15000,
+  "url_image": "cake_GM_18",
+  "form": "rond"
+},
+{
+  "id": 76,
+  "name": "Rondeur Choco Caramel",
+  "description": "Une expérience gustative divine avec ce gâteau moelleux, imbibé et garni de crème.",
+  "price": 15000,
+  "url_image": "cake_GM_19",
+  "form": "rond"
+},
+{
+  "id": 77,
+  "name": "Cake miraculous",
+  "description": "L'alliance parfaite du chocolat et de la vanille dans un gâteau moelleux irrésistible.",
+  "price": 15000,
+  "url_image": "cake_GM_20",
+  "form": "rond"
+},
+{
+  "id": 78,
+  "name": "Rondeur vanille choco",
+  "description": "Répétition d'un délice où le moelleux rencontre la crème à la vanille et au chocolat.",
+  "price": 15000,
+  "url_image": "cake_GM_21",
+  "form": "rond"
+},
+{
+  "id": 79,
+  "name": "Rondeur Passion",
+  "description": "Un gâteau moelleux qui célèbre la vanille avec une crème délicate, pour un moment de passion.",
+  "price": 15000,
+  "url_image": "cake_GM_22",
+  "form": "rond"
+},
+{
+  "id": 80,
+  "name": "Rose barbie",
+  "description": "Gâteau moelleux classique, un hommage à la vanille, garni de crème onctueuse.",
+  "price": 15000,
+  "url_image": "cake_GM_23",
+  "form": "rond"
+},
+{
+  "id": 81,
+  "name": "Rondeur vanille choco",
+  "description": "Un gâteau moelleux délicatement coloré, alliant la douceur de la vanille à une présentation charmante.",
+  "price": 15000,
+  "url_image": "cake_GM_24",
+  "form": "rond"
+},
+{
+  "id": 82,
+  "name": "Rondeur Évasion",
+  "description": "Un voyage gustatif dans un gâteau moelleux, imbibé de sirop et garni de crème à la vanille.",
+  "price": 15000,
+  "url_image": "cake_GM_25",
+  "form": "rond"
+},
+{
+  "id": 83,
+  "name": "Cake rose neige",
+  "description": "Gâteau moelleux aux couches de génoise imbibées de sirop, avec une garniture de crème à la vanille.",
+  "price": 15000,
+  "url_image": "cake_GM_26",
+  "form": "rond"
+},
+{
+  "id": 84,
+  "name": "Carré choco vanille",
+  "description": "Délicieux gâteau moelleux, crème vanille et génoise imbibée de sirop pour une douceur irrésistible.",
+  "price": 15000,
+  "url_image": "cake_GM_27",
+  "form": "rectangle"
+},
+{
+  "id": 85,
+  "name": "Baby shark",
+  "description": "Gâteau moelleux classique, alliant génoise imbibée et crème à la vanille pour un plaisir inégalé.",
+  "price": 15000,
+  "url_image": "cake_GM_28",
+  "form": "rond"
+},
+{
+  "id": 86,
+  "name": "Gratte-Ciel rosé",
+  "description": "Une fusion parfaite de chocolat et de vanille, dans un gâteau moelleux et réconfortant.",
+  "price": 15000,
+  "url_image": "cake_GM_29",
+  "form": "carre"
+},
+{
+  "id": 87,
+  "name": "Rondeur choco vanille ",
+  "description": "Pour les amateurs de chocolat, un gâteau riche avec une crème onctueuse et des couches de génoise.",
+  "price": 15000,
+  "url_image": "cake_GM_30",
+  "form": "rond"
+}
+
+
+  
+]
