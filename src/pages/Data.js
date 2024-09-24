@@ -7,7 +7,7 @@ import heart_fill from "../assets/images/heart-fill.svg";
 
 function Data() {
   const [data, setData] = useState(null);
-
+  const [shuffledData, setShuffledData] = useState([]); // Nouvel état pour les données mélangées
   const [favorites, setFavorites] = useState(() => {
     const savedFavorites = localStorage.getItem("favorites");
     return savedFavorites ? JSON.parse(savedFavorites) : [];
@@ -18,13 +18,17 @@ function Data() {
       .then((res) => res.json())
       .then((data) => {
         setData(data);
+        setShuffledData(shuffleArray(data)); // Mélange une seule fois
       })
       .catch((error) => {
         console.error("Error fetching the JSON data:", error);
       });
   }, []);
 
-  const toggleFavorite = (item) => {
+  const toggleFavorite = (item, e) => {
+    e.preventDefault();  // Empêche le comportement par défaut
+    e.stopPropagation(); // Empêche la propagation de l'événement
+
     const isFavorite = favorites.some((fav) => fav.id === item.id);
     const updatedFavorites = isFavorite
       ? favorites.filter((fav) => fav.id !== item.id)
@@ -34,26 +38,27 @@ function Data() {
     localStorage.setItem("favorites", JSON.stringify(updatedFavorites));
   };
 
-  // Fonction pour mélanger un tableau
+  // Fonction pour mélanger un tableau (appelée une seule fois)
   const shuffleArray = (array) => {
-    for (let i = array.length - 1; i > 0; i--) {
+    const shuffled = [...array]; // Crée une copie pour ne pas muter l'original
+    for (let i = shuffled.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
-      [array[i], array[j]] = [array[j], array[i]]; // Échange
+      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
     }
-    return array;
+    return shuffled;
   };
 
   return (
     <>
       <div className="catalogue_accueil">
-        {data && shuffleArray(data).slice(0, 6).map((item) => {
+        {shuffledData.slice(0, 6).map((item) => {
           const isFavorite = favorites.some((fav) => fav.id === item.id);
           return (
             <div className="catalogue_item" key={item.id}>
               <div className="cake_detail">
                 <div
                   className="icon_favori"
-                  onClick={() => toggleFavorite(item)}
+                  onClick={(e) => toggleFavorite(item, e)}
                 >
                   <img
                     src={isFavorite ? heart_fill : heart_bold}

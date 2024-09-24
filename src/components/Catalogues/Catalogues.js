@@ -9,29 +9,25 @@ import { Link } from "react-router-dom";
 import SloganText from "../SloganText";
 import heart_bold from "../../assets/images/heart-bold.svg";
 import heart_fill from "../../assets/images/heart-fill.svg"
+
 function Catalogues() {
   const [data, setData] = useState(null);
   const [name, setName] = useState("");
   const [filteredData, setFilteredData] = useState([]);
+  const [shuffledData, setShuffledData] = useState([]); // Nouvel état pour les données mélangées
 
-  
   const [favorites, setFavorites] = useState(() => {
-    // Récupérer les favoris depuis le localStorage si disponible
     const savedFavorites = localStorage.getItem('favorites');
     return savedFavorites ? JSON.parse(savedFavorites) : [];
   });
 
-
-
   const handleSubmit = (event) => {
     event.preventDefault();
 
- 
     const isNumeric = (str) => {
       return /^\d+$/.test(str);
     };
 
-   
     const filter = data.filter((item) => {
       if (isNumeric(name)) {
         return item.price.toString().includes(name);
@@ -51,50 +47,48 @@ function Catalogues() {
     }
   };
 
-
   useEffect(() => {
     fetch("/catalogue.json")
       .then((res) => res.json())
       .then((data) => {
         setData(data);
         setFilteredData(data);
+        setShuffledData(shuffleArray(data)); // Mélange uniquement lors du premier rendu
       })
       .catch((error) => {
         console.error("Error fetching the JSON data:", error);
       });
   }, []);
 
+  const toggleFavorite = (item, e) => {
+    e.preventDefault(); // Empêcher le comportement par défaut (comme la navigation du lien)
+    e.stopPropagation(); // Empêcher la propagation de l'événement
 
-
-  const toggleFavorite = (item) => {
     const isFavorite = favorites.some(fav => fav.id === item.id);
-
     const updatedFavorites = isFavorite 
-      ? favorites.filter(fav => fav.id !== item.id) // retirer des favoris
-      : [...favorites, item]; // ajouter aux favoris
+      ? favorites.filter(fav => fav.id !== item.id)
+      : [...favorites, item];
 
     setFavorites(updatedFavorites);
     localStorage.setItem('favorites', JSON.stringify(updatedFavorites));
   };
 
-
-  // Fonction pour mélanger un tableau
+  // Fonction pour mélanger un tableau (appelée une seule fois)
   const shuffleArray = (array) => {
-    for (let i = array.length - 1; i > 0; i--) {
+    const shuffled = [...array]; // Crée une copie pour ne pas muter l'original
+    for (let i = shuffled.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
-      [array[i], array[j]] = [array[j], array[i]]; // Échange
+      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
     }
-    return array;
+    return shuffled;
   };
-
-
 
   return (
     <div>
       <Header />
       <div className="catalogue_title">
         <h3>MON CATALOGUE </h3>
-        <button style={{ background: "none", border: "none" ,display: "none" }}>
+        <button style={{ background: "none", border: "none", display: "none" }}>
           <img src={icon_filter} alt="icon_filter" />
         </button>
       </div>
@@ -104,9 +98,8 @@ function Catalogues() {
             type="text"
             className="input_search"
             value={name}
-            onChange={(e) => setName(e.target.value)} 
-            onKeyDown={handleKeyDown} 
-          
+            onChange={(e) => setName(e.target.value)}
+            onKeyDown={handleKeyDown}
           />
           <button type="submit">
             <img src={icon_search} alt="icon_search" />
@@ -115,34 +108,35 @@ function Catalogues() {
       </div>
       <div className="catalogue_accueil">
         {filteredData.length > 0 ? (
-         shuffleArray(filteredData).map((item) => {
+          shuffledData.map((item) => {
             const isFavorite = favorites.some((fav) => fav.id === item.id);
             return (
-            <div className="catalogue_item" key={item.id}>
-              <div className="cake_detail">
-              <div
+              <div className="catalogue_item" key={item.id}>
+                <div className="cake_detail">
+                  <div
                     className="icon_favori"
-                    onClick={() => toggleFavorite(item)}
+                    onClick={(e) => toggleFavorite(item, e)}
                   >
                     <img
                       src={isFavorite ? heart_fill : heart_bold}
                       alt="btn_favori"
                     />
                   </div>
-                <Link to={`/cake/${item.id}`} key={item.id}>
-                  <div className="image_item">
-                    <img
-                      src={`/assets/images/${item.url_image}.png`}
-                      alt={item.name}
-                    />
-                    
-                  </div>
-                  <h2 className="cake_name">{item.name}</h2>
-                  <p className="cake_price">{item.price} Fcfa</p>
-                </Link>
+                  <Link to={`/cake/${item.id}`}>
+                    <div className="image_item">
+                      <img
+                        src={`/assets/images/${item.url_image}.png`}
+                        alt={item.name}
+                      />
+                    </div>
+                    <h2 className="cake_name">{item.name}</h2>
+                    <p className="cake_price">{item.price} Fcfa</p>
+                  </Link>
+                </div>
               </div>
-            </div>
-          )})) : (
+            );
+          })
+        ) : (
           <div>Pas de résultat</div>
         )}
       </div>
