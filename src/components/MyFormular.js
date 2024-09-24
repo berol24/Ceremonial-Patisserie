@@ -18,12 +18,38 @@ function MyFormular(props) {
   const [showConfirmation, setShowConfirmation] = useState(false); // État pour gérer la pop-up de confirmation
   const [formVisible, setFormVisible] = useState(true); // État pour gérer la visibilité du formulaire
 
+  // const handleDateChange = (e) => {
+  //   let item_date_livraison = e.target.value;
+    
+    
+  //   item_date_livraison = item_date_livraison.replace("T", " ");
+  //   console.log(item_date_livraison);
+  //   setItem_date_livraison(item_date_livraison);
+  //   console.log("Date sélectionnée:", item_date_livraison);
+  // };
+
   const handleDateChange = (e) => {
     let item_date_livraison = e.target.value;
+  
+    // Remplacer le "T" par un espace pour formater la date
     item_date_livraison = item_date_livraison.replace("T", " ");
-    setItem_date_livraison(item_date_livraison);
-    console.log("Date sélectionnée:", item_date_livraison);
+    
+    // Convertir la date sélectionnée en objet Date
+    const selectedDate = new Date(e.target.value);
+    // Obtenir la date actuelle
+    const currentDate = new Date();
+    
+    // Comparer la date sélectionnée à la date actuelle
+    if (selectedDate >= currentDate) {
+      console.log("Date sélectionnée valide:", item_date_livraison);
+      setItem_date_livraison(item_date_livraison);
+    } else {
+      // Si la date est dans le passé, afficher un message d'erreur ou gérer l'erreur
+      console.log("Erreur: la date sélectionnée est dans le passé.");
+      alert("Veuillez sélectionner une date et une heure égales ou supérieures à la date actuelle.");
+    }
   };
+  
 
   const [link, setLink] = useState("");
 
@@ -85,6 +111,13 @@ Cordialement,
 
   const handleCloseConfirmation = () => {
     setShowConfirmation(false); // Ferme la pop-up sans annuler
+  };
+
+  const handleTelephone = (e) => {
+    const value = e.target.value;
+    // Filtre pour accepter uniquement les chiffres (0-9)
+    const onlyNums = value.replace(/\D/g, ""); // Enlève tous les caractères non numériques
+    setItem_numero_telephone(onlyNums);
   };
 
   return (
@@ -198,7 +231,7 @@ Cordialement,
                   id="numero_telephone"
                   className="form-item"
                   value={item_numero_telephone}
-                  onChange={(e) => setItem_numero_telephone(e.target.value)}
+                  onChange={handleTelephone}
                   placeholder="655810768"
                 />
               </div>
