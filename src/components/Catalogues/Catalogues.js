@@ -8,72 +8,18 @@ import "../../styles/Catalogues_css/Catalogues.css";
 import { Link } from "react-router-dom";
 import SloganText from "../SloganText";
 import heart_bold from "../../assets/images/heart-bold.svg";
-import heart_fill from "../../assets/images/heart-fill.svg"
+import heart_fill from "../../assets/images/heart-fill.svg";
 
 function Catalogues() {
   const [data, setData] = useState(null);
   const [name, setName] = useState("");
   const [filteredData, setFilteredData] = useState([]);
-  const [shuffledData, setShuffledData] = useState([]); // Nouvel état pour les données mélangées
-
   const [favorites, setFavorites] = useState(() => {
-    const savedFavorites = localStorage.getItem('favorites');
+    const savedFavorites = localStorage.getItem("favorites");
     return savedFavorites ? JSON.parse(savedFavorites) : [];
   });
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-
-    const isNumeric = (str) => {
-      return /^\d+$/.test(str);
-    };
-
-    const filter = data.filter((item) => {
-      if (isNumeric(name)) {
-        return item.price.toString().includes(name);
-      } else {
-        return item.name.toLowerCase().includes(name.toLowerCase()) || 
-               item.form.toLowerCase().includes(name.toLowerCase());
-      }
-    });
-
-    setFilteredData(filter);
-    console.log(`The name you entered was: ${name}`);
-  };
-
-  const handleKeyDown = (event) => {
-    if (event.key === "Enter") {
-      handleSubmit(event); // Lancer la recherche lorsque Enter est pressé
-    }
-  };
-
-  useEffect(() => {
-    fetch("/catalogue.json")
-      .then((res) => res.json())
-      .then((data) => {
-        setData(data);
-        setFilteredData(data);
-        setShuffledData(shuffleArray(data)); // Mélange uniquement lors du premier rendu
-      })
-      .catch((error) => {
-        console.error("Error fetching the JSON data:", error);
-      });
-  }, []);
-
-  const toggleFavorite = (item, e) => {
-    e.preventDefault(); // Empêcher le comportement par défaut (comme la navigation du lien)
-    e.stopPropagation(); // Empêcher la propagation de l'événement
-
-    const isFavorite = favorites.some(fav => fav.id === item.id);
-    const updatedFavorites = isFavorite 
-      ? favorites.filter(fav => fav.id !== item.id)
-      : [...favorites, item];
-
-    setFavorites(updatedFavorites);
-    localStorage.setItem('favorites', JSON.stringify(updatedFavorites));
-  };
-
-  // Fonction pour mélanger un tableau (appelée une seule fois)
+  // Fonction pour mélanger un tableau (appelée une seule fois lors du chargement des données)
   const shuffleArray = (array) => {
     const shuffled = [...array]; // Crée une copie pour ne pas muter l'original
     for (let i = shuffled.length - 1; i > 0; i--) {
@@ -83,11 +29,71 @@ function Catalogues() {
     return shuffled;
   };
 
+  // Récupération des données depuis le fichier JSON
+  useEffect(() => {
+    fetch("/catalogue.json")
+      .then((res) => res.json())
+      .then((data) => {
+        console.log("Données récupérées :", data); // Vérifiez que les données sont bien récupérées
+        setData(data);
+        const shuffledData = shuffleArray(data); // Mélanger les données une seule fois
+        setFilteredData(shuffledData); // Appliquer le mélange initial aux données filtrées
+      })
+      .catch((error) => {
+        console.error("Erreur lors de la récupération des données JSON :", error);
+      });
+  }, []);
+
+  // Fonction pour filtrer les résultats selon l'entrée utilisateur
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    if (!data) return; // Si les données ne sont pas encore chargées, ne rien faire
+
+    const isNumeric = (str) => /^\d+$/.test(str);
+
+    const filter = data.filter((item) => {
+      if (isNumeric(name)) {
+        return item.price.toString().includes(name);
+      } else {
+        return (
+          item.name.toLowerCase().includes(name.toLowerCase()) ||
+          item.form.toLowerCase().includes(name.toLowerCase())
+        );
+      }
+    });
+
+    setFilteredData(filter); // Met à jour l'état avec les résultats filtrés
+    console.log(`Nom recherché : ${name}`);
+  };
+
+  // Fonction pour gérer la touche "Enter" pour déclencher la recherche
+  const handleKeyDown = (event) => {
+    if (event.key === "Enter") {
+      event.preventDefault();
+      handleSubmit(event); // Lancer la recherche avec "Enter"
+    }
+  };
+
+  // Gestion des favoris
+  const toggleFavorite = (item, e) => {
+    e.preventDefault();
+    e.stopPropagation();
+
+    const isFavorite = favorites.some((fav) => fav.id === item.id);
+    const updatedFavorites = isFavorite
+      ? favorites.filter((fav) => fav.id !== item.id)
+      : [...favorites, item];
+
+    setFavorites(updatedFavorites);
+    localStorage.setItem("favorites", JSON.stringify(updatedFavorites));
+  };
+
   return (
     <div>
       <Header />
       <div className="catalogue_title">
-        <h3>MON CATALOGUE </h3>
+        <h3>MON CATALOGUE</h3>
         <button style={{ background: "none", border: "none", display: "none" }}>
           <img src={icon_filter} alt="icon_filter" />
         </button>
@@ -108,7 +114,7 @@ function Catalogues() {
       </div>
       <div className="catalogue_accueil">
         {filteredData.length > 0 ? (
-          shuffledData.map((item) => {
+          filteredData.map((item) => {
             const isFavorite = favorites.some((fav) => fav.id === item.id);
             return (
               <div className="catalogue_item" key={item.id}>
