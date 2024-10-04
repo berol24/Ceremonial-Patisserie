@@ -78,7 +78,7 @@ function MyFormular(props) {
     } else {
         // Si la date est trop proche, afficher un message d'erreur ou gérer l'erreur
         console.log("Erreur: la date sélectionnée est inférieure à 3 jours à partir d'aujourd'hui.");
-         alert("Veuillez sélectionner une date et une heure qui sont au moins 3 jours après la date actuelle.");
+         alert("Vous devez reserver toris jours avant la date de livraison.");
         // setShowPopup(true);
       }
 };
