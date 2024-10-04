@@ -288,9 +288,11 @@ Cordialement,
                 />
               </div>
               <div className="form-group" id="date">
+
                 <label htmlFor="date_livraison">
                   Date et heure de livraison
                 </label>
+                  
                 <input
                   type="datetime-local"
                   name="date_livraison"
@@ -301,9 +303,11 @@ Cordialement,
                   required
 
                 />
+                <p>"Vous devez reserver au moins trois jours avant la date de livraison"</p>
               </div>
-              <div className="form-group ">
+              <div className="form-group monpaiement">
                 <label htmlFor="moyen_paiement">Moyen de paiement</label>
+              
                 <section>
                   <div>
                     <div className="image-container">

@@ -34,6 +34,15 @@
     /* border: 2px solid green; */
 }
 
+.monpaiement{
+    margin-top: 50px;
+}
+
+#date p{
+    font-size: 15px;
+    font-style: italic;
+}
+
 .form-group input[type=text],
 /* input[type=number], */
 textarea {
@@ -199,6 +208,12 @@ border: none;
     .form-group textarea{
         font-size: 14px;
     }
+
+
+   .monpaiement {
+     margin-top: 50px;
+   }
+
 
 
     .form-group .form-item::placeholder{
