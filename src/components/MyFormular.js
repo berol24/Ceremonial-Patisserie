@@ -18,6 +18,9 @@ function MyFormular(props) {
   const [showConfirmation, setShowConfirmation] = useState(false); // État pour gérer la pop-up de confirmation
   const [formVisible, setFormVisible] = useState(true); // État pour gérer la visibilité du formulaire
 
+
+  // const [showPopup, setShowPopup] = useState(false);
+
   // const handleDateChange = (e) => {
   //   let item_date_livraison = e.target.value;
     
@@ -28,28 +31,58 @@ function MyFormular(props) {
   //   console.log("Date sélectionnée:", item_date_livraison);
   // };
 
+  // const handleDateChange = (e) => {
+  //   let item_date_livraison = e.target.value;
+  
+  //   // Remplacer le "T" par un espace pour formater la date
+  //   item_date_livraison = item_date_livraison.replace("T", " ");
+    
+  //   // Convertir la date sélectionnée en objet Date
+  //   const selectedDate = new Date(e.target.value);
+  //   // Obtenir la date actuelle
+  //   const currentDate = new Date();
+    
+  //   // Comparer la date sélectionnée à la date actuelle
+  //   if (selectedDate >= currentDate) {
+  //     console.log("Date sélectionnée valide:", item_date_livraison);
+  //     setItem_date_livraison(item_date_livraison);
+  //   } else {
+  //     // Si la date est dans le passé, afficher un message d'erreur ou gérer l'erreur
+  //     console.log("Erreur: la date sélectionnée est dans le passé.");
+  //     alert("Veuillez sélectionner une date et une heure égales ou supérieures à la date actuelle.");
+  //   }
+  // };
+  
+
+
   const handleDateChange = (e) => {
     let item_date_livraison = e.target.value;
-  
+
     // Remplacer le "T" par un espace pour formater la date
     item_date_livraison = item_date_livraison.replace("T", " ");
     
     // Convertir la date sélectionnée en objet Date
     const selectedDate = new Date(e.target.value);
+    
     // Obtenir la date actuelle
     const currentDate = new Date();
     
-    // Comparer la date sélectionnée à la date actuelle
+    // Ajouter 3 jours à la date actuelle
+    currentDate.setDate(currentDate.getDate() + 3);
+    
+    // Comparer la date sélectionnée à la date actuelle + 3 jours
     if (selectedDate >= currentDate) {
-      console.log("Date sélectionnée valide:", item_date_livraison);
-      setItem_date_livraison(item_date_livraison);
+        console.log("Date sélectionnée valide:", item_date_livraison);
+        setItem_date_livraison(item_date_livraison);
+        // setShowPopup(false);
     } else {
-      // Si la date est dans le passé, afficher un message d'erreur ou gérer l'erreur
-      console.log("Erreur: la date sélectionnée est dans le passé.");
-      alert("Veuillez sélectionner une date et une heure égales ou supérieures à la date actuelle.");
-    }
-  };
-  
+        // Si la date est trop proche, afficher un message d'erreur ou gérer l'erreur
+        console.log("Erreur: la date sélectionnée est inférieure à 3 jours à partir d'aujourd'hui.");
+         alert("Veuillez sélectionner une date et une heure qui sont au moins 3 jours après la date actuelle.");
+        // setShowPopup(true);
+      }
+};
+
 
   const [link, setLink] = useState("");
 
@@ -122,6 +155,12 @@ Cordialement,
 
   return (
     <>
+    {/* {showPopup && (
+      <div className="popup">
+          <p>Veuillez sélectionner une date et une heure qui sont au moins 3 jours après la date actuelle.</p>
+          <button onClick={() => setShowPopup(false)}>Fermer</button>
+      </div>
+  )} */}
       {formVisible && (
         <div className="formular">
           <form action="#" onSubmit={handleSubmit}>

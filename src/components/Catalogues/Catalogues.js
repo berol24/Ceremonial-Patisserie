@@ -40,7 +40,10 @@ function Catalogues() {
         setFilteredData(shuffledData); // Appliquer le mélange initial aux données filtrées
       })
       .catch((error) => {
-        console.error("Erreur lors de la récupération des données JSON :", error);
+        console.error(
+          "Erreur lors de la récupération des données JSON :",
+          error
+        );
       });
   }, []);
 
