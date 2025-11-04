@@ -6,7 +6,6 @@ import heart_bold from "../assets/images/heart-bold.svg";
 import heart_fill from "../assets/images/heart-fill.svg";
 
 function Data() {
-  const [data, setData] = useState(null);
   const [shuffledData, setShuffledData] = useState([]); // Nouvel état pour les données mélangées
   const [favorites, setFavorites] = useState(() => {
     const savedFavorites = localStorage.getItem("favorites");
@@ -17,7 +16,6 @@ function Data() {
     fetch("/catalogue.json")
       .then((res) => res.json())
       .then((data) => {
-        setData(data);
         setShuffledData(shuffleArray(data)); // Mélange une seule fois
       })
       .catch((error) => {
